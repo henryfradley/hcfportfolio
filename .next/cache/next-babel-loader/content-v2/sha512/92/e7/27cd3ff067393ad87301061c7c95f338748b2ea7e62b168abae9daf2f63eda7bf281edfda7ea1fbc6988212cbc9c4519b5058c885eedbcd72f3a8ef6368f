@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styles from '../styles.css';","map":{"version":3,"sources":["/Users/henryfradley/personalProjects/hcfportfolio/pages/_app.js"],"names":["styles"],"mappings":"AAAA,OAAOA,MAAP,MAAmB,eAAnB","sourcesContent":["import styles from '../styles.css';"]},"metadata":{},"sourceType":"module"}
