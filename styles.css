@@ -1,16 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
 html,
 body,
-p,
+div,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4
+ {
   margin: 0;
   padding: 0;
-  background-color: antiquewhite;
   box-sizing: border-box;
+  font-family: 'Forum';
+  font-weight: 400;
+  background-color: rgb(36, 35, 37);
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+}
+
+
+.henryBox {
+  margin-top: 5vh;
+  width: 200px;
+  height: 54px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .1rem;
+}
+
+.main {
+  margin-left: 5%;
+}
+.main h1 {
+  margin-top: 18vh;
+  font-size: 10rem;
+  font-weight: 400;
+  letter-spacing: .3rem;
+}
+
+.main h2 {
+  margin-top: 1vh;
+  font-size: 3.2rem;
+  letter-spacing: .15rem;
 }
 
 @keyframes spin {
@@ -18,54 +63,49 @@ h6 {
   to {transform:rotate(360deg);}
 }
 
+.spinHolder {
+  margin-top: 5vh;
+  margin-left: 75%;
+}
 .spinner {
-  width: 400px;
-  height: 400px;
-  border: 1px solid red;
-  animation: spin 12s linear infinite;
-  border-radius: 50px;
+  animation: spin 15s linear infinite;
 }
 
-.toolbar {
-  margin-left: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image img {
+  flex: none;
+  /* transition: .5s ease-in-out; */
+  transition: transform .6s;
 }
 
-.button {
-  cursor: pointer;
-  transition: .5s ease;
-
+.image img:hover {
+  transform: scale(1.05);
+  transition: transform .6s;
 }
-
-.underline {
-  width: 80%;
-  float: right;
-  border-bottom: 2px solid black;
-  transition: .5s ease;
-}
-
-.spinIn {
-  margin-top: 20%;
-  margin-left: 50%;
-  display: flex;
-  animation: 5s flipIn;
-}
-
-.spinIn p {
-  margin-left: 2%;
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 4rem;
-
-}
-
-@keyframes flipIn {
-  from {opacity: 0; transform: rotate(360); left: 100%}
-  to {opacity: 1; left: 0;}
-}
-
 
 
