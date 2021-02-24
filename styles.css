@@ -16,6 +16,12 @@ h4
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0 0;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -262,6 +268,16 @@ h3 {
   padding-bottom: .05rem;
   width: fit-content;
   cursor: pointer;
+}
+
+.socialsBox {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 2vh;
+  width: 200px;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 

@@ -18,8 +18,6 @@ const Home = () => {
       <Main />
       <Projects />
       <Footer />
-
-
     </div>
 
   );

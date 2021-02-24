@@ -1,3 +1,7 @@
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+
+
+
 const Footer = () => {
   return (
     <div class="footer">
@@ -8,8 +12,13 @@ const Footer = () => {
           <li>Photography</li>
           <li>Contact</li>
         </ul>
-        <div class="socialsBox">
+        <div>
           <div class="henryBox"><p>henry fradley.</p></div>
+          <div class="socialsBox">
+            <a target="_blank" href="https://www.linkedin.com/in/henryfradley/"><FaLinkedin size="25px"/></a>
+            <a target="_blank" href="https://github.com/henryfradley"><FaGithub size="25px"/></a>
+            <a target="_blank" href="https://www.instagram.com/henryfradley/"><FaInstagram size="25px"/></a>
+            </div>
         </div>
     </div>
 
