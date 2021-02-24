@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
 import projects from '../data/projectData.js';
@@ -14,14 +15,14 @@ const Project = (props) => {
         <div class="projectDescription">
           <h3>{props.data.name}</h3>
           <p>{props.data.tech}</p>
-          <div class="projectButton">VIEW PROJECT</div>
+          <Link href={`/projects/${props.data.link}`}><div class="projectButton">VIEW PROJECT</div></Link>
         </div>
       </div>
        : <div class="projectRight">
             <div class="projectDescription">
             <h3>{props.data.name}</h3>
             <p>{props.data.tech}</p>
-            <div class="projectButton">VIEW PROJECT</div>
+            <Link href={`/projects/${props.data.link}`}><div class="projectButton">VIEW PROJECT</div></Link>
             </div>
             <img></img>
           </div>

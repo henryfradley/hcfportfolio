@@ -2,6 +2,7 @@ module.exports = {
   data: [
     {
       left: true,
+      link: 'micaela-designs',
       name: 'Micaela Designs',
       tech: 'React, Node.js, SASS',
       mainImg: 'link..',
@@ -10,6 +11,7 @@ module.exports = {
     },
     {
       left: false,
+      link: 'swell-tracker',
       name: 'Swell Tracker',
       tech: 'React, Node.js, SASS',
       mainImg: 'link..',
@@ -18,6 +20,7 @@ module.exports = {
     },
     {
       left: true,
+      link: 'relax',
       name: 'Relax',
       tech: 'React, Node.js, SASS',
       mainImg: 'link..',
@@ -26,6 +29,7 @@ module.exports = {
     },
     {
       left: false,
+      link: 'help-our-home',
       name: 'Help Our Home',
       tech: 'React, Node.js, SASS',
       mainImg: 'link..',
