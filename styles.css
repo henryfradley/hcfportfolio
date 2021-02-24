@@ -13,7 +13,6 @@ h4
   box-sizing: border-box;
   font-family: 'Forum';
   font-weight: 400;
-  background-color: rgb(36, 35, 37);
   color: white;
 }
 
@@ -26,12 +25,34 @@ p {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
+}
+
+.mainPage {
+  position: relative;
+  border: 1px solid  rgb(45, 43, 49)
+}
+
+.backgroundLines {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgb(45, 43, 49);
+}
+
+.backgroundLines div {
+  border-right: 1px solid rgb(179, 178, 178, .25);
+  height: 100%;
+  width: 100%;
 }
 
 
 .henryBox {
+  margin-left: 5vw;
   margin-top: 5vh;
   width: 200px;
   height: 54px;
@@ -42,10 +63,10 @@ body {
   letter-spacing: .1rem;
 }
 
-.main {
-  margin-left: 5%;
-}
+
+
 .main h1 {
+  margin-left: 5vw;
   margin-top: 18vh;
   font-size: 10rem;
   font-weight: 400;
@@ -53,6 +74,7 @@ body {
 }
 
 .main h2 {
+  margin-left: 5vw;
   margin-top: 1vh;
   font-size: 3.2rem;
   letter-spacing: .15rem;
@@ -68,8 +90,92 @@ body {
   margin-left: 75%;
 }
 .spinner {
-  animation: spin 15s linear infinite;
+  animation: spin 20s linear infinite;
 }
+
+.whatImInto {
+  margin-top: 20vh;
+  margin-left: 5vw;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.interests {
+  width: 30%;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  float: center;
+}
+
+
+
+.tools {
+  margin-left: 20vw;
+  width: 50%;
+}
+
+.myTools {
+  width: 50%;
+}
+
+.line {
+  margin-top: 1vh;
+  width: 92%;
+  border-bottom: 1px solid white;
+
+}
+
+.description {
+  margin-top: 4vh;
+  font-size: 1.3rem;
+  width: 90%;
+  line-height: 2;
+}
+
+.tools p {
+  margin-top: 4vh;
+  width: 80%;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.projects {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  position: relative;
+}
+
+.projects h1 {
+  z-index: 5;
+  margin-left: 5vw;
+  margin-top: 20vh;
+  font-size: 10rem;
+  width: 50%;
+  padding-bottom: 20vh;
+}
+
+.image1 {
+  opacity: .9;
+}
+
+.image2 {
+  margin-top: 65vh;
+  opacity: .9;
+}
+
+.image3 {
+  margin-top: 15vh;
+  opacity: .9;
+}
+
+
+
 
 
 
