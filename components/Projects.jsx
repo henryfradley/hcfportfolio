@@ -34,7 +34,6 @@ const Project = (props) => {
 const Projects = () => {
 
   const data = projects.data;
-
   const list = data.map(project => {
     return <Project data={project} key={data.indexOf(project)} />
   })
@@ -89,7 +88,6 @@ const Projects = () => {
     </ParallaxProvider>
       {list}
     </div>
-
 
   );
 };

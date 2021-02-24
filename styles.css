@@ -101,7 +101,7 @@ body {
 }
 
 .interests {
-  width: 22%;
+  width: fit-content;
   margin-left: 5vw;
 }
 
@@ -120,7 +120,7 @@ h3 {
 }
 
 .myTools {
-  width: 50%;
+  width: fit-content;
 }
 
 .line {
@@ -240,6 +240,31 @@ h3 {
   letter-spacing: .4rem;
   cursor: pointer;
 }
+
+.footer {
+  padding-top: 10vh;
+  border-top: 1px solid rgb(179, 178, 178, .15);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: rgb(45, 43, 49);
+
+}
+
+.footNav {
+  margin-left: 5vw;
+}
+
+.footNav li {
+  list-style: none;
+  margin-bottom: 3vh;
+  font-size: 1.4rem;
+  border-bottom: 1px solid white;
+  padding-bottom: .05rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+
 
 
 

@@ -1,5 +1,6 @@
 import Main from '../components/Main.jsx';
 import Projects from '../components/Projects.jsx';
+import Footer from '../components/Footer.jsx';
 
 
 
@@ -16,6 +17,8 @@ const Home = () => {
       </div>
       <Main />
       <Projects />
+      <Footer />
+
 
     </div>
 
