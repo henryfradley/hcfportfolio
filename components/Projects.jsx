@@ -7,13 +7,26 @@ import projects from '../data/projectData.js';
 const Project = (props) => {
 
   return (
-    <div class="project">
-      <img></img>
-      <div class="projectDescription">
-        <h3>{props.data.name}</h3>
-        <p>{props.data.tech}</p>
-        <div class="projectButton">VIEW PROJECT</div>
+    <div>
+      {props.data.left ?
+      <div class="project">
+        <img></img>
+        <div class="projectDescription">
+          <h3>{props.data.name}</h3>
+          <p>{props.data.tech}</p>
+          <div class="projectButton">VIEW PROJECT</div>
+        </div>
       </div>
+       : <div class="projectRight">
+            <div class="projectDescription">
+            <h3>{props.data.name}</h3>
+            <p>{props.data.tech}</p>
+            <div class="projectButton">VIEW PROJECT</div>
+            </div>
+            <img></img>
+          </div>
+       }
+
     </div>
   )
 }
@@ -74,12 +87,7 @@ const Projects = () => {
 
     </div>
     </ParallaxProvider>
-
-    {list}
-
-
-
-
+      {list}
     </div>
 
 
