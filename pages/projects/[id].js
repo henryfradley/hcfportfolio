@@ -9,9 +9,29 @@ const Project = () => {
 
   return (
     <div class="projectPage">
-      <h1>{data.name}</h1>
-      <div>Overview</div>
-      <p>{data.details}</p>
+      <div class="whiteBackgroundLines">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="henryBoxWhite">
+        <div>henry fradley.</div>
+      </div>
+      <div class="projectInfo">
+        <div>
+          <h1>{data.name}</h1>
+          <h3>Overview</h3>
+          <p>{data.details}</p>
+        </div>
+        <div class="projectTools">
+          <h3>Tools</h3>
+          <h4>{data.tech}</h4>
+          <div class="livesite">LIVE SITE</div>
+        </div>
+
+      </div>
+
     </div>
 
   );
