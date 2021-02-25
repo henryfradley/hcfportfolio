@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router'
 import projects from '../../data/projectDetails.js';
+import Carousel from '../../components/Carousel.jsx';
+import Footer from '../../components/Footer.jsx';
 
 
 const Project = () => {
@@ -8,7 +10,8 @@ const Project = () => {
   const data = projects[id];
 
   return (
-    <div class="projectPage">
+    <div>
+      <div class="projectPage">
       <div class="whiteBackgroundLines">
         <div></div>
         <div></div>
@@ -32,7 +35,12 @@ const Project = () => {
 
       </div>
 
+      </div>
+      <Carousel data={data} />
+      <Footer />
+
     </div>
+
 
   );
 };

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 
+:root {
+  --black: #20211F;
+  --darkGreen: #B0CC76;
+  --offwhite: #F0F7E4;
+  --white: #FFFFFF;
+
+}
+
 html,
 body,
 div,
@@ -13,7 +21,7 @@ h4
   box-sizing: border-box;
   font-family: 'Forum';
   font-weight: 400;
-  color: white;
+  color: var(--offwhite);
 }
 
 a {
@@ -38,7 +46,7 @@ body {
 
 .mainPage {
   position: relative;
-  border: 1px solid  rgb(45, 43, 49)
+  border: 1px solid var(--black)
 }
 
 .backgroundLines {
@@ -48,7 +56,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgb(45, 43, 49);
+  background-color: var(--black);
 }
 
 .backgroundLines div {
@@ -252,7 +260,7 @@ h3 {
   border-top: 1px solid rgb(179, 178, 178, .15);
   display: grid;
   grid-template-columns: 40% 60%;
-  background-color: rgb(45, 43, 49);
+  background-color: var(--black);
 
 }
 
@@ -282,21 +290,20 @@ h3 {
 
 .projectPage {
   border-top: 1px solid rgb(179, 178, 178, .15);
-  color: black;
+  color: var(--black);
+  padding-bottom: 20vh;
+  margin: 0 0;
 }
 
 .projectPage h1 {
-  color: black;
+  color: var(--black);
 
 }
 
 
-
-
-
 .projectPage h1 {
+  margin-top: 15vh;
   margin-left: 5vw;
-  margin-top: 20vh;
   font-size: 4.5rem;
   letter-spacing: .2rem;
 }
@@ -304,9 +311,9 @@ h3 {
 .projectPage h3 {
   margin-top: 12vh;
   margin-left: 5vw;
-  color: black;
+  color: var(--black);;
   padding-bottom: .5rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);;
   width: fit-content;
 }
 
@@ -314,23 +321,23 @@ h3 {
   margin-top: 5vh;
   margin-left: 5vw;
   width: 45vw;
-  color: black;
+  color: var(--black);;
 }
 .henryBoxWhite {
   margin-left: 5vw;
   margin-top: 5vh;
   width: 200px;
   height: 54px;
-  border: 1px solid black;
+  border: 1px solid var(--black);;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: .1rem;
-  color: black;
+  color: var(--black);;
 }
 
 .henryBoxWhite div {
-  color: black;
+  color: var(--black);;
   font-size: 1.5rem;
 }
 
@@ -342,7 +349,7 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: white;
+  background-color: var(--offwhite);
 }
 
 .whiteBackgroundLines div {
@@ -357,14 +364,15 @@ h3 {
 }
 
 .projectInfo h4 {
-  color: black;
+  color: var(--black);
 }
 
 .projectTools {
   margin-top: 20vh;
-  border: 1px solid black;
+  border: 1px solid var(--black);;
   margin-left: 15vw;
   width: 20vw;
+  background-color: var(--offwhite);
 }
 
 .projectTools h3 {
@@ -388,11 +396,85 @@ h3 {
   font-family: sans-serif;
   letter-spacing: .4rem;
   cursor: pointer;
-  color: black;
+  color: var(--black);;
   width: 60%;
   margin-left: 20%;
 }
 
+.carousel {
+  margin: 0 0;
+  padding-top: 15vh;
+  background-color: var(--black);
+  display: grid;
+  justify-content: center;
+}
+
+.carousel img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 400px;
+}
+
+.carousel h3 {
+  display: block;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5rem;
+  border-bottom: 1px solid var(--offwhite)
+
+}
+
+.carousel p {
+  margin-top: 4vh;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5;
+
+}
+
+.nextProject {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid rgb(179, 178, 178, .15);
+  margin-bottom: 0;
+}
+
+.prev {
+  border-right: 1px solid rgb(179, 178, 178, .15);
+  width: 100%;
+  height: 18vh;
+  padding-top: 4vh;
+}
+
+.next {
+  width: 100%;
+  height: 18vh;
+  padding-top: 4vh;
+}
+
+.prev p {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.next p {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 
 

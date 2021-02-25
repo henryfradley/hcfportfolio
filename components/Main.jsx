@@ -27,7 +27,7 @@ const Main = () => {
           <h3>What I’m into</h3>
           <div class="line"></div>
         </div>
-        <p class="description">I love doing all types of stuff things and stuff like foiling and computers and coding and gardening and sometimes downwind foiling and i like fishing toot hings and stuff like foiling and computers and coding and gardening and sometimes downwind foiling and i like fishing too</p>
+        <p class="description">I am a Full-Stack Software Engineer located in Honolulu, HI. I am an artist and a creator at heart and am currently entranced with the infinite options of creation with software engineering. I specialize in working with React.js, Next.js, and Node.js, and AWS services.</p>
         </div>
         <div class="tools">
           <div class="myTools">
