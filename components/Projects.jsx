@@ -52,8 +52,8 @@ const Projects = () => {
           <Image
               src="/plant.jpg"
               alt="plant"
-              width="400"
-              height="400"
+              layout="fill"
+              objectFit="contain"
             />
         </div>
       </Parallax>
@@ -64,8 +64,8 @@ const Projects = () => {
             class="image2"
             src="/pipe.jpg"
             alt="surf"
-            width="400"
-            height="400"
+            layout="fill"
+            objectFit="contain"
           />
 
         </div>
@@ -77,8 +77,8 @@ const Projects = () => {
             class="image3"
               src="/desk.jpg"
               alt="desk"
-              width="400"
-              height="400"
+              layout="fill"
+              objectFit="contain"
             />
 
         </div>

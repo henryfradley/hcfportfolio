@@ -181,16 +181,22 @@ h3 {
 .image1 {
   opacity: .9;
   z-index: 5;
+  width: 100%;
+  min-height: 50vh;
 }
 
 .image2 {
   margin-top: 65vh;
   opacity: .9;
+  width: 100%;
+  min-height: 50vh;
 }
 
 .image3 {
   margin-top: 15vh;
   opacity: .9;
+  width: 100%;
+  min-height: 50vh;
 }
 
 .project {
@@ -478,23 +484,46 @@ h3 {
 .photoHead {
   display: grid;
   grid-template-columns: 50% 50%;
+  /* height: 100vh; */
 }
+
 
 .about {
   margin-top: 25vh;
 }
 
-.photoHead img {
-  width: 100%;
-  min-height: 700px;
-  background-color: brown;
-}
+
 
 .about p {
   color: var(--black);
   margin-left: 5vw;
   margin-right: 8vw;
   line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: 'Forum';
+}
+
+
+.bigImage {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.hcfLogo {
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  width: 200px;
+  height: 54px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .1rem;
+  z-index: 5;
+
 }
 
 
@@ -523,17 +552,17 @@ h3 {
 
 
 
-
+/*
 
 .image img {
   flex: none;
   /* transition: .5s ease-in-out; */
-  transition: transform .6s;
-}
+  /* transition: transform .6s;
+} */
 
-.image img:hover {
+/* .image img:hover {
   transform: scale(1.05);
   transition: transform .6s;
 }
 
-
+ */
