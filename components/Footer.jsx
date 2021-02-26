@@ -1,4 +1,6 @@
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import Link from 'next/link';
+
 
 
 
@@ -8,8 +10,8 @@ const Footer = () => {
 
         <ul class="footNav">
           <li>About</li>
-          <li>Projects</li>
-          <li>Photography</li>
+          <Link href="/projects/micaela-designs"><li>Projects</li></Link>
+          <Link href="/photography"><li>Photography</li></Link>
           <li>Contact</li>
         </ul>
         <div>
