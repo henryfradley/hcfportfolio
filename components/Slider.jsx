@@ -5,6 +5,7 @@ import Link from 'next/link'
 const Slider = (props) => {
   const images = props.data.images;
 
+
   const [image, setImage] = useState(images[0]);
 
 <Link href={`/projects/${props.data.next}`}></Link>
