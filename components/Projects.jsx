@@ -32,7 +32,14 @@ const Project = (props) => {
   )
 }
 
+
+
+
 const Projects = () => {
+
+  const myLoader = ({ src, width, quality }) => {
+    return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
+  }
 
   const data = projects.data;
   const list = data.map(project => {
@@ -50,7 +57,8 @@ const Projects = () => {
       <Parallax y={[30, -30]}>
         <div class="image1">
           <Image
-              src="/plant.jpg"
+              loader={myLoader}
+              src="plant.jpg"
               alt="plant"
               layout="fill"
               objectFit="contain"
@@ -61,8 +69,9 @@ const Projects = () => {
       <Parallax y={[-20, 20]}>
         <div class="image2">
         <Image
+            loader={myLoader}
             class="image2"
-            src="/pipe.jpg"
+            src="surf.jpg"
             alt="surf"
             layout="fill"
             objectFit="contain"
@@ -74,8 +83,9 @@ const Projects = () => {
       <Parallax y={[20, -20]}>
         <div class="image3">
           <Image
-            class="image3"
-              src="/desk.jpg"
+              loader={myLoader}
+              class="image3"
+              src="desk.jpg"
               alt="desk"
               layout="fill"
               objectFit="contain"

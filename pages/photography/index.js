@@ -1,5 +1,8 @@
+import data from '../../data/photoProjects.js';
 import Image from 'next/image';
+import PhotoCarousel from '../../components/PhotoCarousel.jsx'
 import Footer from '../../components/Footer.jsx';
+
 
 const myLoader = ({ src, width, quality }) => {
   return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
@@ -7,6 +10,16 @@ const myLoader = ({ src, width, quality }) => {
 
 
 const Photos = () => {
+
+  console.log('images', images);
+
+  const images = data.images;
+
+  const projects = images.map(project => {
+    return <PhotoCarousel data={project} />
+  })
+
+
   return (
     <div>
       <div class="whiteBackgroundLines">
@@ -19,13 +32,11 @@ const Photos = () => {
     <div class="photoHead">
       <div class="bigImage">
       <Image
-      priority="true"
       loader={myLoader}
       src="shaybike.jpg"
       alt="pile"
       layout="fill"
       objectFit="cover"
-
     />
       </div>
 
@@ -37,6 +48,10 @@ const Photos = () => {
       </div>
 
     </div>
+
+
+    {projects}
+
 
 
     <Footer />
