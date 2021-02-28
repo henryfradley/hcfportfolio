@@ -1,20 +1,35 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const Menu = () => {
 
-  const images = [1, 2, 3];
+  const images = ['wilhelmina', 'bubbles', 'trolling', 'rock', 'clouds'];
 
   const [index, setIndex] = useState(0);
-  const [visible, setVisibile] = useState(false)
+  const [visible, setVisible] = useState(false)
+
+//   useEffect(() => {
+//     document.body.style.overflow = 'hidden';
+//     return ()=> document.body.style.overflow = 'unset';
+//  }, []);
 
   const showMenu = () => {
-    setVisibile(true)
+    setVisible(true)
+    document.body.style.overflow = 'hidden';
   };
 
   const hideMenu = () => {
-    setVisibile(false)
+    setVisible(false)
+    document.body.style.overflow = 'visible';
   };
+
+  const setClassName = function(name) {
+    if (linkList.indexOf(name) === index) {
+      return 'selected'
+    } else {
+      return 'link'
+    }
+  }
 
 
 
@@ -25,26 +40,26 @@ const Menu = () => {
   const linkList = ['HOME', 'ABOUT', 'PROJECTS', 'PHOTOGRAPHY', 'CONTACT'];
 
   const links = linkList.map(link => {
-    if (linkList.indexOf(link) === index) {
-      return <li class="selected">{link}</li>
-    } else {
-      return <li class="link">{link}</li>
-    }
-  })
+      return <li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link}</li>
+  });
 
 
 
 
   return (
 
+
     <div>
-      {!visible ? <div onClick={showMenu} class="menu">
+      {!visible ?
+      <div onClick={showMenu} class="menu">
         <div class="menuLine"></div>
         <div class="menuLine"></div>
       </div> : <p onClick={hideMenu} class="menu">X</p>}
 
       {visible ?
-      <div class="menuPage">
+      <div>
+        <div class="henryBoxMenu"><p>henry fradley.</p></div>
+        <div class="menuPage">
         <div class="greenBackgroundLines">
           <div></div>
           <div></div>
@@ -56,19 +71,20 @@ const Menu = () => {
             {links}
 
           </ul>
-          <div class="menuPhoto">
-          {/* <Image
-            class="carouselPhoto"
+        </div>
+        <div class="menuPhoto">
+          <Image
             loader={myLoader}
             src={`${images[index]}.jpg`}
             alt="pile"
             layout="fill"
             objectFit="contain"
-          /> */}
-
+          />
           </div>
-        </div>
-      </div> : null
+      </div>
+
+      </div>
+      : null
       }
 
 

@@ -25,28 +25,21 @@ const PhotoCarousel = (props) => {
   }
 
   const prevImage = () => {
-    {index > 0 ? setIndex(index - 1) : setIndex()}
+    {index > 0 ? setIndex(index - 1) : setIndex(length)}
   }
 
 
   return (
     <div class="photoProj">
-      <div class="whiteBackgroundLines">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
 
       <div class="photoHead">
       <div class="bigImage">
         <Image
-        class="carouselPhoto"
         loader={myLoader}
         src={`${images[index]}.jpg`}
         alt="pile"
         layout="fill"
-        objectFit="contain"
+        objectFit="cover"
         />
       </div>
       <div class="projDescription">

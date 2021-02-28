@@ -22,14 +22,16 @@ const Photos = () => {
 
   return (
     <div>
-      <div class="whiteBackgroundLines">
+      <div class="photoBackgroundLines">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <div class="hcfLogo"><p>henry fradley.</p></div>
+    <div>
+    <div class="hcfLogo"><p>henry fradley.</p></div>
     <div class="photoHead">
+
       <div class="bigImage">
       <Image
       loader={myLoader}
@@ -55,7 +57,12 @@ const Photos = () => {
 
 
     <Footer />
+
     </div>
+
+
+    </div>
+
 
   );
 

@@ -17,7 +17,7 @@ module.exports = {
   },
   'relax': {
     name: 'Relax',
-    details: 'This project.... blah bla blah.... wefhwfewifhiwhfehwfihewifhewifuiewhfiuewhfewiuhfiuewhfuihwifuhwfihefiuwehfiuw',
+    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     images: ['1.jpg', '2.jpg', '3.jpg'],
     tech: 'React, Node.js, SASS',
     next: 'help-our-home',
@@ -25,7 +25,7 @@ module.exports = {
   },
   'help-our-home': {
     name: 'Help Our Home',
-    details: 'This project.... blah bla blah.... wefhwfewifhiwhfehwfihewifhewifuiewhfiuewhfewiuhfiuewhfuihwifuhwfihefiuwehfiuw',
+    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     images: ['1.jpg', '2.jpg', '3.jpg'],
     tech: 'React, Node.js, SASS',
     next: 'micaela-designs',
