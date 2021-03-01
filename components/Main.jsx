@@ -1,4 +1,5 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 
 
 
@@ -8,7 +9,10 @@ const Main = () => {
 
   return (
     <div class="main">
+      <Link href="/">
       <div class="henryBox"><p>henry fradley.</p></div>
+
+        </Link>
       <h1>Hi, I’m Henry.</h1>
       <h2>I build things for the web.</h2>
       <div class="spinHolder">

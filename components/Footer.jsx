@@ -15,7 +15,7 @@ const Footer = () => {
           <li>Contact</li>
         </ul>
         <div>
-          <div class="henryBox"><p>henry fradley.</p></div>
+          <Link href="/"><div class="henryBox"><p>henry fradley.</p></div></Link>
           <div class="socialsBox">
             <a target="_blank" href="https://www.linkedin.com/in/henryfradley/"><FaLinkedin size="25px"/></a>
             <a target="_blank" href="https://github.com/henryfradley"><FaGithub size="25px"/></a>

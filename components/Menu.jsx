@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Menu = () => {
 
@@ -60,6 +61,7 @@ const Menu = () => {
 
       {visible ?
       <div>
+
         <div class="henryBoxMenu"><p>henry fradley.</p></div>
         <div class="menuPage">
         <div class="greenBackgroundLines">
@@ -74,7 +76,7 @@ const Menu = () => {
 
           </ul>
         </div>
-        <div class="menuPhoto">
+        <div class="menuPhoto" key={images[index]}>
           <Image
             loader={myLoader}
             src={`${images[index]}.jpg`}

@@ -76,6 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   letter-spacing: .1rem;
+  cursor: pointer;
 
 }
 
@@ -548,7 +549,7 @@ h3 {
 
 
 .bigImage {
-  background-color: none;
+  background-color: var(--black);
   height: 100vh;
   width: 50vw;
   position: relative;
@@ -572,6 +573,7 @@ h3 {
   align-items: center;
   letter-spacing: .1rem;
   z-index: 5;
+  cursor: pointer;
 }
 
 .hcfLogo p {
@@ -611,12 +613,15 @@ h3 {
   margin-top: 2vh;
   display: flex;
   max-width: 80%;
+  align-items: center;
+  height: fit-content;
 }
-
 .projArrows {
   margin-top: 4vh;
   display: flex;
-justify-content: center;
+  max-width: 80%;
+  align-items: center;
+  height: fit-content;
 }
 
 .dots {
@@ -629,50 +634,55 @@ justify-content: center;
 .dot {
   margin-right: .2rem;
   margin-left: .2rem;
-  width: 1rem;
-  height: 1rem;
+  width: .8rem;
+  height: .8rem;
   border: 1px solid var(--black);
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 .whitedot {
   margin-right: .2rem;
   margin-left: .2rem;
-  width: 1rem;
-  height: 1rem;
+  width: .8rem;
+  height: .8rem;
   border: 1px solid var(--white);
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 .solidDot {
   margin-right: .2rem;
   margin-left: .2rem;
-  width: 1rem;
-  height: 1rem;
+  width: .8rem;
+  height: .8rem;
   border: 1px solid var(--black);
-  border-radius: 1rem;
+  border-radius: .8rem;
   background-color: var(--black);
+  animation: appear .2s ease;
 
 }
 
 .solidwhiteDot {
   margin-right: .2rem;
   margin-left: .2rem;
-  width: 1rem;
-  height: 1rem;
+  width: .8rem;
+  height: .8rem;
   border: 1px solid var(--white);
-  border-radius: 1rem;
+  border-radius: .8rem;
   background-color: var(--white);
 
 }
 .arrow {
-  color: var(--black);
   cursor: pointer;
+  width: fit-content;
+  height: fit-content;
 }
 
+
+
 .whitearrow {
-  color: var(--white);
   cursor: pointer;
+  width: fit-content;
+  height: fit-content;
 }
 
 
@@ -817,10 +827,10 @@ justify-content: center;
   width: 90%;
   height: 80%;
   position: relative;
+  animation: appear ease .5s;
 }
 
 .henryBoxMenu {
-
   position: absolute;
   margin-top: 5vh;
   margin-left: 5vw;
@@ -832,6 +842,7 @@ justify-content: center;
   align-items: center;
   letter-spacing: .1rem;
   z-index: 7;
+  cursor: pointer;
 }
 
 .henryBoxMenu p {

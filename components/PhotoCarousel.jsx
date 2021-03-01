@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
+
 const myLoader = ({ src, width, quality }) => {
   return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
 }
@@ -52,9 +53,23 @@ const PhotoCarousel = (props) => {
         <p>{props.data.description}</p>
 
         <div class="imageArrows">
-          <div onClick={prevImage} class="arrow">ARROW</div>
+          <div onClick={prevImage} class="arrow">
+            <Image
+              src="/leftArrow.png"
+              alt="leftArrow"
+              width={43}
+              height={25}
+            />
+        </div>
           <div class="dots">{dots}</div>
-          <div onClick={nextImage} class="arrow">ARROW</div>
+          <div onClick={nextImage} class="arrow">
+            <Image
+              src="/rightArrow.png"
+              alt="rightArrow"
+              width={43}
+              height={25}
+            />
+          </div>
         </div>
       </div>
     <div>

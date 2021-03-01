@@ -1,5 +1,6 @@
 import data from '../../data/photoProjects.js';
 import Image from 'next/image';
+import Link from 'next/link';
 import PhotoCarousel from '../../components/PhotoCarousel.jsx'
 import Footer from '../../components/Footer.jsx';
 
@@ -29,7 +30,8 @@ const Photos = () => {
         <div></div>
       </div>
     <div>
-    <div class="hcfLogo"><p>henry fradley.</p></div>
+      <Link href="/"><div class="hcfLogo"><p>henry fradley.</p></div></Link>
+
     <div class="photoHead">
 
       <div class="bigImage">
