@@ -75,6 +75,7 @@ const PhotoCarousel = (props) => {
     <div>
         </div>
       </div>
+
     </div>
 
   );

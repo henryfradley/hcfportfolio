@@ -49,24 +49,23 @@ const Carousel = (props) => {
 
       </div>
 
-      <div class="arrows"></div>
       <h3>Feature Description</h3>
       <div class="projArrows">
-          <div onClick={prevImage} class="whitearrow">
+          <div onClick={prevImage} class="arrow">
           <Image
                 src="/whiteLeftArrow.png"
                 alt="leftArrow"
-                width="80"
-                height="25"
+                layout="fill"
+                objectFit="contain"
             />
             </div>
           <div class="dots">{dots}</div>
-          <div onClick={nextImage} class="whitearrow">
+          <div onClick={nextImage} class="arrow">
             <Image
                 src="/whiteRightArrow.png"
                 alt="rightArrow"
-                width="43"
-                height="25"
+                layout="fill"
+                objectFit="contain"
             />
           </div>
       </div>

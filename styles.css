@@ -617,16 +617,17 @@ h3 {
   height: fit-content;
 }
 .projArrows {
+  width: 100%;
   margin-top: 4vh;
   display: flex;
-  max-width: 80%;
+  justify-content: center;
   align-items: center;
   height: fit-content;
 }
 
 .dots {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 1vw;
+  margin-right: 1vw;
   display: flex;
   justify-content: space-between;
 }
@@ -675,15 +676,13 @@ h3 {
   cursor: pointer;
   width: fit-content;
   height: fit-content;
+  width: 43px;
+  height: 25px;
+  position: relative;
 }
 
 
 
-.whitearrow {
-  cursor: pointer;
-  width: fit-content;
-  height: fit-content;
-}
 
 
 .photoProj {
