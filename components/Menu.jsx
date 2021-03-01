@@ -6,20 +6,22 @@ const Menu = () => {
   const images = ['wilhelmina', 'bubbles', 'trolling', 'rock', 'clouds'];
 
   const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
+  const [closed, setClosed] = useState(false);
 
-//   useEffect(() => {
-//     document.body.style.overflow = 'hidden';
-//     return ()=> document.body.style.overflow = 'unset';
-//  }, []);
+
 
   const showMenu = () => {
-    setVisible(true)
+    setClosed(false);
+    setVisible(true);
     document.body.style.overflow = 'hidden';
   };
 
   const hideMenu = () => {
-    setVisible(false)
+    setClosed(true);
+    setVisible(false);
+
+
     document.body.style.overflow = 'visible';
   };
 
@@ -86,6 +88,13 @@ const Menu = () => {
       </div>
       : null
       }
+
+      {
+      closed ?
+      <div class="closed"></div>
+      : null
+      }
+
 
 
     </div>

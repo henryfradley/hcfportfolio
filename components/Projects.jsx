@@ -5,13 +5,26 @@ import { Parallax } from 'react-scroll-parallax';
 import projects from '../data/projectData.js';
 
 
+const myLoader = ({ src, width, quality }) => {
+  return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
+}
+
 const Project = (props) => {
 
   return (
     <div>
       {props.data.left ?
       <div class="project">
-        <img></img>
+        <div class="highlightImage">
+          <Image
+          loader={myLoader}
+          src={`${props.data.images[0]}.jpg`}
+          alt="highlight"
+          width="800"
+          height="450"
+          />
+        </div>
+
         <div class="projectDescription">
           <h3>{props.data.name}</h3>
           <p>{props.data.tech}</p>

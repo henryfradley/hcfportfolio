@@ -29,11 +29,13 @@ const PhotoCarousel = (props) => {
   }
 
 
+
   return (
     <div class="photoProj">
 
       <div class="photoHead">
       <div class="bigImage">
+        <div class="slideImage" key={images[index]}>
         <Image
         loader={myLoader}
         src={`${images[index]}.jpg`}
@@ -41,6 +43,8 @@ const PhotoCarousel = (props) => {
         layout="fill"
         objectFit="cover"
         />
+        </div>
+
       </div>
       <div class="projDescription">
         <h1>{props.data.name}</h1>

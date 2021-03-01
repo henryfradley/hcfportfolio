@@ -7,7 +7,7 @@ module.exports = {
       tech: 'React, Node.js, SASS',
       mainImg: 'link..',
       details: 'This project.... blah bla blah.... wefhwfewifhiwhfehwfihewifhewifuiewhfiuewhfewiuhfiuewhfuihwifuhwfihefiuwehfiuw',
-      images: ['1.jpg', '2.jpg', '3.jpg'],
+      images: ['micaelaDesigns1', 'micaelaDesigns2', 'micaelaDesigns3'],
       next: 'swell-tracker',
       prev: 'help-our-home'
     },

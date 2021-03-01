@@ -4,6 +4,7 @@ import Carousel from '../../components/Carousel.jsx';
 import Footer from '../../components/Footer.jsx';
 
 
+
 const Project = () => {
   const router = useRouter()
   const { id } = router.query

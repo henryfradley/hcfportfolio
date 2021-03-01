@@ -2,7 +2,7 @@ module.exports = {
   'micaela-designs': {
     name: 'Micaela Designs',
     details: 'Worked collaboratively with a graphic designer to revamp their portfolio site. I was given the basic layout and style that they wanted and I had a lot of fun ensuring the site fit her vision. I built the project as a single page app with React, Node.js, and Express.',
-    images: ['1.jpg', '2.jpg', '3.jpg'],
+    images: ['micaelaDesigns1', 'micaelaDesigns2', 'micaelaDesigns3'],
     tech: 'React, Node.js, Express, SASS',
     next: 'swell-tracker',
     prev: 'help-our-home'
