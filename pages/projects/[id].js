@@ -19,7 +19,7 @@ const Project = () => {
 
   return (
     <div>
-      <Menu black={true} />
+      <Menu black={true} name={"PROJECTS"}/>
       <div class="whiteBackgroundLines">
         <div></div>
         <div></div>

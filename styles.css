@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root {
   --black: #20211F;
@@ -36,7 +37,7 @@ a {
 p {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Poppins';
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -97,7 +98,7 @@ body {
 
 
 .main h1 {
-  margin-top: 15vh;
+  margin-top: 25vh;
   margin-left: 5vw;
   font-size: 10rem;
   font-weight: 400;
@@ -157,7 +158,6 @@ h3 {
   margin-top: 1vh;
   width: 100%;
   border-bottom: 1px solid white;
-
 }
 
 .description {
@@ -335,7 +335,7 @@ h3 {
   padding-top: 5vh;
   border-top: 1px solid rgb(179, 178, 178, .15);
   color: var(--black);
-  padding-bottom: 20vh;
+  padding-bottom: 18vh;
   margin: 0 0;
 }
 
@@ -394,16 +394,16 @@ h3 {
   position: absolute;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: var(--offwhite);
+  background-color: var(--tan);
 }
 
 
 .whiteBackgroundLines div {
   border-right: 1px solid rgb(179, 178, 178, .15);
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -421,7 +421,7 @@ h3 {
   border: 1px solid var(--black);;
   margin-left: 15vw;
   width: 20vw;
-  background-color: var(--offwhite);
+  background-color: var(--tan);
 }
 
 .projectTools h3 {
@@ -725,16 +725,15 @@ h3 {
 
 .menuHeader {
   position: absolute;
-  right: 3vw;
+  right: 3.5vw;
   top: 1.8vh;
   color: var(--black);
   display: inline-block;
   width: 150px;
   font-family: 'Syncopate', sans-serif;
   font-size: .8rem;
-  text-align: center;
+  text-align: right;
   cursor: default;
-
 }
 
 .whiteMenuHeader {
@@ -759,6 +758,7 @@ h3 {
   height: 5vh;
   z-index: 5;
 }
+
 
 
 
@@ -911,6 +911,7 @@ h3 {
 
 .aboutPage {
   padding-top: 5vh;
+  padding-bottom: 10vh;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -943,10 +944,134 @@ h3 {
   font-family: 'Syncopate', sans-serif;
   font-size: 1.3rem;
   cursor: pointer;
+}
 
+
+.contactPage {
+  padding-top: 5vh;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 0;
 
 }
 
+.contactText {
+  padding-right: 15vw;
+}
+
+.contactText p {
+  color: var(--black);
+  margin-top: 20vh;
+  line-height: 1.5;
+  font-family: 'Forum';
+  font-size: 1.8rem;
+}
+
+.contactText h4 {
+  margin-top: 6vh;
+  color: var(--black);
+  font-family: 'Poppins';
+}
+
+.bigSocials {
+  margin-top: 4vh;
+  width: 16vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid var(--black);
+  outline: none;
+  height: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  width: 19.7vw;
+  background: transparent;
+  text-align: top;
+  font-family: 'Forum';
+  font-size: 1.3rem;
+  color: var(--black)
+}
+
+.send {
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  font-family: 'Syncopate';
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.big {
+  border: 1px solid var(--black);
+  width: 38vw;
+  background-color: var(--tan);
+  padding-bottom: 20vh;
+  padding-left: 1vw;
+
+}
+
+::placeholder {
+  color: var(--black);
+}
+
+.arrowLine {
+  width: 30px;
+  height: 1px;
+  border-top: 1px solid var(--black);
+  margin: 0 0;
+}
+
+.sendArrow input {
+  height: fit-content;
+  margin: 0 0;
+}
+
+.sendArrow {
+  margin-left: 5vw;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  width: 12vw;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+.moveArrow {
+  margin-left: 5.4vw;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  width: 20vw;
+  transition: ease-in-out .3s;
+}
+.moveArrow input {
+  height: fit-content;
+  margin: 0 0;
+}
+
+
+
+.smallArrow {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  width: 30px;
+  height: 21px;
+  position: relative;
+}
 
 
 

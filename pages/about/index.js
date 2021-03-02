@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Menu from '../../components/Menu.jsx';
+import Footer from '../../components/Footer.jsx';
 import { useEffect } from 'react';
 
 const About = () => {
@@ -43,11 +44,8 @@ const About = () => {
 
 
         </div>
-
       </div>
-
-
-
+      <Footer white={true} />
 
     </div>
   );
