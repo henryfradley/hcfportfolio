@@ -2,7 +2,9 @@ import data from '../../data/photoProjects.js';
 import Image from 'next/image';
 import Link from 'next/link';
 import PhotoCarousel from '../../components/PhotoCarousel.jsx'
+import Menu from '../../components/Menu.jsx';
 import Footer from '../../components/Footer.jsx';
+import { useEffect } from 'react';
 
 
 const myLoader = ({ src, width, quality }) => {
@@ -12,7 +14,9 @@ const myLoader = ({ src, width, quality }) => {
 
 const Photos = () => {
 
-  console.log('images', images);
+  useEffect(() => {
+    document.body.style.overflow = 'visible'
+  });
 
   const images = data.images;
 
@@ -23,6 +27,7 @@ const Photos = () => {
 
   return (
     <div>
+      <Menu black="true" name="PHOTOGRAPHY"/>
       <div class="photoBackgroundLines">
         <div></div>
         <div></div>
@@ -30,7 +35,7 @@ const Photos = () => {
         <div></div>
       </div>
     <div>
-      <Link href="/"><div class="hcfLogo"><p>henry fradley.</p></div></Link>
+      <Link href="../"><div class="hcfLogo"><p>henry fradley.</p></div></Link>
 
     <div class="photoHead">
 
@@ -58,7 +63,7 @@ const Photos = () => {
 
 
 
-    <Footer />
+    <Footer white={true}/>
 
     </div>
 

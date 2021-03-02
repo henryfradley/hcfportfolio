@@ -47,7 +47,11 @@ const PhotoCarousel = (props) => {
         </div>
 
       </div>
-      <div class="projDescription">
+      <div class="projDescription" style={{backgroundColor: props.data.color}}>
+        <div class="bgLine">
+          <div></div>
+        </div>
+
         <h1>{props.data.name}</h1>
         <h3>{props.data.date}</h3>
         <p>{props.data.description}</p>

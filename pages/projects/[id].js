@@ -2,23 +2,31 @@ import { useRouter } from 'next/router'
 import projects from '../../data/projectDetails.js';
 import Carousel from '../../components/Carousel.jsx';
 import Footer from '../../components/Footer.jsx';
+import Menu from '../../components/Menu.jsx';
+import { useEffect } from 'react';
 
 
 
 const Project = () => {
+
+  useEffect(() => {
+    document.body.style.overflow = 'visible'
+  });
+
   const router = useRouter()
   const { id } = router.query
   const data = projects[id];
 
   return (
     <div>
-      <div class="projectPage">
+      <Menu black={true} />
       <div class="whiteBackgroundLines">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
       </div>
+      <div class="projectPage">
       <div class="henryBoxWhite">
         <div>henry fradley.</div>
       </div>
@@ -38,7 +46,7 @@ const Project = () => {
 
       </div>
       <Carousel data={data} />
-      <Footer />
+      <Footer color="#20211F"/>
 
     </div>
 

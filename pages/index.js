@@ -21,7 +21,7 @@ const Home = () => {
       </div>
       <Main />
       <Projects />
-      <Footer />
+      <Footer color="#20211F"/>
     </div>
 
   );

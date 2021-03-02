@@ -4,6 +4,8 @@
 :root {
   --black: #20211F;
   --darkGreen: #B0CC76;
+  --lightGreen: #D6E0C1;
+  --tan: #E4EDD3;
   --offwhite: #F0F7E4;
   --white: #FFFFFF;
 
@@ -47,6 +49,8 @@ body {
 
 .mainPage {
   position: relative;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .backgroundLines {
@@ -278,7 +282,14 @@ h3 {
   display: grid;
   grid-template-columns: 40% 60%;
   background-color: var(--black);
+}
 
+.whiteFooter {
+  padding-top: 10vh;
+  border-top: 1px solid rgb(179, 178, 178, .15);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: var(--lightGreen);
 }
 
 .footNav {
@@ -295,6 +306,21 @@ h3 {
   cursor: pointer;
 }
 
+.whiteFootNav {
+  margin-left: 5vw;
+}
+
+.whiteFootNav li {
+  list-style: none;
+  margin-bottom: 3vh;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--black);
+  color: var(--black);
+  padding-bottom: .05rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
 .socialsBox {
   padding-left: 30px;
   padding-right: 30px;
@@ -306,6 +332,7 @@ h3 {
 }
 
 .projectPage {
+  padding-top: 5vh;
   border-top: 1px solid rgb(179, 178, 178, .15);
   color: var(--black);
   padding-bottom: 20vh;
@@ -343,7 +370,6 @@ h3 {
 .henryBoxWhite {
   font-family: 'Forum';
   margin-left: 5vw;
-  margin-top: 5vh;
   width: 200px;
   height: 54px;
   border: 1px solid var(--black);;
@@ -351,7 +377,8 @@ h3 {
   justify-content: center;
   align-items: center;
   letter-spacing: .1rem;
-  color: var(--black);;
+  color: var(--black);
+  cursor: pointer;
 }
 
 .henryBoxWhite div {
@@ -370,7 +397,7 @@ h3 {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: var(--white);
+  background-color: var(--offwhite);
 }
 
 
@@ -394,7 +421,7 @@ h3 {
   border: 1px solid var(--black);;
   margin-left: 15vw;
   width: 20vw;
-  background-color: var(--white);
+  background-color: var(--offwhite);
 }
 
 .projectTools h3 {
@@ -495,21 +522,24 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-
+  font-family: 'Syncopate';
+  cursor: pointer;
 }
 .next p {
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Syncopate';
+  cursor: pointer;
 }
 
 
 .photoHead {
   display: grid;
   grid-template-columns: 50% 50%;
-  /* height: 100vh; */
+  background-color: var(--offwhite);
+
 }
 
 .photoBackgroundLines {
@@ -519,14 +549,14 @@ h3 {
   grid-template-columns: 25% 25% 25% 25%;
   height: 300vh;
   width: 100%;
-  z-index: -1;
-  background-color: var(--white);
 }
 
 .photoBackgroundLines div {
   border-right: 1px solid rgb(179, 178, 178, .15);
   height: 100%;
   width: 100%;
+  z-index: 1;
+
 }
 
 
@@ -554,6 +584,7 @@ h3 {
   width: 50vw;
   position: relative;
   margin: 0 0 ;
+  z-index: 1;
 }
 
 
@@ -572,7 +603,7 @@ h3 {
   justify-content: center;
   align-items: center;
   letter-spacing: .1rem;
-  z-index: 5;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -583,7 +614,6 @@ h3 {
 
 .projDescription {
   color: var(--black);
-  background-color: none;
   padding-top: 40%;
   padding-left: 5vw;
   padding-right: 10vw;
@@ -608,6 +638,8 @@ h3 {
   line-height: 1.5;
 
 }
+
+
 
 .imageArrows {
   margin-top: 2vh;
@@ -679,6 +711,7 @@ h3 {
   width: 43px;
   height: 25px;
   position: relative;
+  z-index: 3;
 }
 
 
@@ -690,21 +723,41 @@ h3 {
 }
 
 
+.menuHeader {
+  position: absolute;
+  right: 3vw;
+  top: 1.8vh;
+  color: var(--black);
+  display: inline-block;
+  width: 150px;
+  font-family: 'Syncopate', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  cursor: default;
 
+}
+
+.whiteMenuHeader {
+  position: absolute;
+  right: 3vw;
+  top: 1.8vh;
+  color: var(--white);
+  display: inline-block;
+  width: 150px;
+  font-family: 'Syncopate', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  cursor: default;
+
+}
 .menu {
   position: absolute;
   cursor: pointer;
-  top: 5vw;
+  top: 2.5vh;
   right: 5vw;
   width: 2.5vw;
   height: 5vh;
   z-index: 5;
-}
-
-.menuLine {
-  width: 100%;
-  height: .1rem;
-  border: 2px solid red;
 }
 
 
@@ -755,6 +808,8 @@ h3 {
   background-color: var(--darkGreen);
   display: grid;
   grid-template-columns: 50% 50%;
+  z-index: 3;
+
 }
 
 .closed {
@@ -764,7 +819,7 @@ h3 {
   animation: slideOut ease .5s;
   animation-fill-mode: forwards;
   background-color: var(--darkGreen);
-  z-index: 7;
+  z-index: 2;
 
 }
 
@@ -830,6 +885,7 @@ h3 {
 }
 
 .henryBoxMenu {
+  animation: slideIn ease .5s;
   position: absolute;
   margin-top: 5vh;
   margin-left: 5vw;
@@ -849,6 +905,47 @@ h3 {
   font-size: 1.7rem;
 }
 
+.aboutHolder {
+  padding-top: 5vh;
+}
+
+.aboutPage {
+  padding-top: 5vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.aboutPhoto {
+  margin-top: 9vh;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.aboutText {
+  margin-top: 10vh;
+  color: var(--black);
+  width: 80%;
+}
+
+.aboutText h3 {
+  color: var(--black);
+}
+
+.aboutText p {
+  margin-top: 5vh;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.getInTouch p {
+  color: var(--black);
+  font-family: 'Syncopate', sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+
+}
 
 
 
