@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -12,9 +13,18 @@ const Main = () => {
 
       <div class="henryBox"><p>henry fradley.</p></div>
 
+      <Fade distance="5vh" delay={500} bottom>
+        <h1>Hi, I’m Henry.</h1>
+      </Fade>
 
-      <h1>Hi, I’m Henry.</h1>
-      <h2>I build things for the web.</h2>
+
+      <Fade distance="4vh" delay={800} bottom>
+        <h2>I build things for the web.</h2>
+      </Fade>
+
+
+
+
       <div class="spinHolder">
         <Image
           class="spinner"
@@ -27,20 +37,36 @@ const Main = () => {
       </div>
       <div class="whatImInto">
         <div>
+
         <div class="interests">
-          <h3>What I’m into</h3>
-          <div class="line"></div>
-        </div>
-        <p class="description">I am a Full-Stack Software Engineer located in Honolulu, HI. I am an artist and a creator at heart and am currently entranced with the infinite options of creation with software engineering. I specialize in working with React.js, Next.js, and Node.js, and AWS services.</p>
+        <Fade distance="5vh" delay={400} bottom>
+        <h3>What I’m into</h3>
+        </Fade>
+
+          </div>
+
+          <Fade distance="5vh" delay={800} bottom>
+            <p class="description">I am a Full-Stack Software Engineer located in Honolulu, HI. I am an artist and a creator at heart and am currently entranced with the infinite options of creation with software engineering. I specialize in working with React.js, Next.js, and Node.js, and AWS services.</p>
+          </Fade>
+
+
+
+
         </div>
         <div class="tools">
           <div class="myTools">
+          <Fade distance="5vh" delay={400} bottom>
             <h3>My tools</h3>
-            <div class="line"></div>
+          </Fade>
+
+
           </div>
+          <Fade distance="5vh" delay={800} bottom>
+            <p>React.js, Next.js, Javascript, SASS, MySQL, Postgres, HTML, CSS, AWS</p>
+          </Fade>
 
 
-          <p>React.js, Next.js, Javascript, SASS, MySQL, Postgres, HTML, CSS, AWS</p>
+
         </div>
 
 

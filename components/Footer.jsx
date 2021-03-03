@@ -24,7 +24,7 @@ const Footer = (props) => {
     <a target="_blank" href="https://www.instagram.com/henryfradley/"><FaInstagram size="25px"/></a>
     </div>
 </div>
-</div> : <div class="whiteFooter">
+</div> : <div class="whiteFooter" style={{backgroundColor: props.color}}>
 
 <ul class="whiteFootNav">
   <Link href="/about"><li>About</li></Link>

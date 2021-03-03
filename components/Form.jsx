@@ -3,9 +3,7 @@ import Image from 'next/image';
 
 
 const Form = (props) => {
-  // const [name, writeName] = useState('');
-  // const [email, writeEmail] = useState('');
-  // const [message, writeMessage] = useState('');
+
 
   const [message, writeMessage] = useState({
     name: '',

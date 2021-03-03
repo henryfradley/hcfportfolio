@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Fade from 'react-reveal/Fade';
+
 
 const Menu = (props) => {
 
@@ -47,10 +49,13 @@ const Menu = (props) => {
     return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
   }
 
-  const linkList = [['HOME', '../'], ['ABOUT', '/about'], ['PROJECTS', '/projects/micaela-designs'], ['PHOTOGRAPHY', '/photography'], ['CONTACT', '/contact']];
+  const linkList = [['HOME', '../', 400], ['ABOUT', '/about', 500], ['PROJECTS', '/projects/micaela-designs', 600], ['PHOTOGRAPHY', '/photography', 700], ['CONTACT', '/contact', 800]];
+
+
 
   const links = linkList.map(link => {
-      return <Link href={link[1]}><li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link>
+      return <Fade distance="5vh" delay={link[2]} bottom>
+      <Link href={link[1]}><li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link></Fade>
   });
 
 
@@ -98,10 +103,11 @@ const Menu = (props) => {
         <div class="pageList">
           <ul class="pages">
             {links}
-
           </ul>
         </div>
-        <div class="menuPhoto" key={images[index]}>
+
+
+          <div class="menuPhoto" key={images[index]}>
           <Image
             loader={myLoader}
             src={`${images[index]}.jpg`}
@@ -110,6 +116,9 @@ const Menu = (props) => {
             objectFit="contain"
           />
           </div>
+
+
+
       </div>
 
       </div>

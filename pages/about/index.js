@@ -2,14 +2,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Menu from '../../components/Menu.jsx';
 import Footer from '../../components/Footer.jsx';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const About = () => {
 
+  const [ hover, setHover ] = useState(true);
 
   useEffect(() => {
     document.body.style.overflow = 'visible'
   });
+
+  const toggleHover = () => {
+    setHover(!hover);
+  };
+
+
 
   return (
     <div>
@@ -37,7 +44,23 @@ const About = () => {
             <h3>I'm Henry, a software engineer based in Honolulu, HI.</h3>
             <p>I have always loved building and creating with all types of shit! I'm also a C team member of the downwind foiling club! coding is cool! More words!! I have always loved building and creating with all types of shit! I'm also a C team member of the downwind foiling club! coding is cool! More words!! </p>
             <p>I'm currently looking for remote oppurtunities in software engineering! If you would like to reach out or just say hi send me a message!</p>
-            <div class="getInTouch"><p>GET IN TOUCH</p></div>
+            <div class={hover ? "getInTouch" : "getInTouchHover"} onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}>>
+            <div class="arrowLine"></div>
+            <Link href="../contact">
+             <p>GET IN TOUCH</p>
+            </Link>
+
+              <div class="smallArrow">
+        <Image
+              src="/rightArrow.png"
+              alt="rightArrow"
+              layout="fill"
+              objectFit="contain"
+            />
+
+        </div>
+            </div>
           </div>
 
 
