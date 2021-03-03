@@ -7,18 +7,9 @@ import Fade from 'react-reveal/Fade';
 const Menu = (props) => {
 
   const images = ['wilhelmina', 'bubbles', 'trolling', 'rock', 'clouds'];
-
-
-
-
-
-
   const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(false);
   const [closed, setClosed] = useState(false);
-
-
-
 
 
   const showMenu = () => {
@@ -106,16 +97,19 @@ const Menu = (props) => {
           </ul>
         </div>
 
-
-          <div class="menuPhoto" key={images[index]}>
+        <Fade distance="5vh" delay="1200" bottom>
+          <div class="menuPhoto">
           <Image
             loader={myLoader}
             src={`${images[index]}.jpg`}
             alt="photo"
-            layout="fill"
-            objectFit="contain"
+            // layout="fill"
+            // objectFit="contain"
+            width="625"
+            height="500"
           />
           </div>
+          </Fade>
 
 
 

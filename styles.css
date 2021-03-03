@@ -259,8 +259,12 @@ h3 {
 }
 
 .highlightImage {
-  margin-left: 10%;
+  padding-left: 10vw;
+  width: 50vw;
+  height: 60vh;
+  position: relative;
 }
+
 
 
 
@@ -272,7 +276,7 @@ h3 {
 
 .projectDescription  {
   margin-left: 8vw;
-  margin-top: 4vh;
+  margin-top: 10vh;
 }
 
 
@@ -583,7 +587,7 @@ h3 {
 
 
 .about {
-  margin-top: 25vh;
+  padding-top: 35vh;
 }
 
 
@@ -820,7 +824,7 @@ h3 {
 
 .menuPage {
   animation: slideIn ease .5s;
-  padding-top: 15vh;
+  padding-top: 24vh;
   z-index: 1;
   position: absolute;
   width: 100vw;
@@ -861,16 +865,15 @@ h3 {
   width: 100%;
 }
 
-.pageList {
-  height: 60vh;
-}
+/* .pageList {
+  height: 50vh;
+} */
 
 .pages {
   margin-left: 2.5vw;
-  margin-top: 7vh;
   display: flex;
   flex-direction: column;
-  height: 65vh;
+  height: 62vh;
   justify-content: space-between;
 }
 
@@ -903,14 +906,8 @@ h3 {
 
 }
 
-.menuPhoto {
-  margin-top: 5vh;
-  margin-left: 0;
-  width: 90%;
-  height: 80%;
-  position: relative;
-  animation: appear ease .5s;
-}
+
+
 
 .henryBoxMenu {
   animation: slideIn ease .5s;
@@ -1031,9 +1028,11 @@ h3 {
 }
 
 .contactText h4 {
-  margin-top: 6vh;
+  font-size: 1.2rem;
+  margin-top: 4vh;
   color: var(--black);
   font-family: 'Poppins';
+  font-weight: 700;
 }
 
 .bigSocials {

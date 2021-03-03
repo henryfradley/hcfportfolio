@@ -32,13 +32,17 @@ const Project = (props) => {
       {props.data.left ?
       <div class="project">
         <div class="highlightImage">
+        <Fade distance="5vh" delay={500} bottom>
           <Image
           loader={myLoader}
-          src={`${props.data.images[0]}.jpg`}
+          src={`${props.data.images[0]}.png`}
           alt="highlight"
-          width="800"
-          height="450"
+          // layout="fill"
+          // objectFit="contain"
+          width="600"
+          height="337.5"
           />
+        </Fade>
         </div>
 
         <div class="projectDescription">
@@ -90,7 +94,7 @@ const Project = (props) => {
 
           <div class={hover ? "moveBack" : "move"} onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}>
-        <Fade distance="5vh" delay={900} bottom>
+        <Fade distance="5vh" delay={1100} bottom>
           <div class="projectArrow">
             <div class="whiteArrowLine"></div>
             <Link href={`/projects/${props.data.link}`}><div class="projectButton">VIEW PROJECT</div></Link>
@@ -112,13 +116,17 @@ const Project = (props) => {
 
         </div>
         <div class="highlightImage">
+        <Fade distance="5vh" delay={1100} bottom>
           <Image
           loader={myLoader}
-          src={`${props.data.images[0]}.jpg`}
+          src={`${props.data.images[0]}.png`}
           alt="highlight"
-          width="800"
-          height="450"
+          // layout="fill"
+          // objectFit="contain"
+          width="350"
+          height="500"
           />
+        </Fade>
         </div>
           </div>
        }
@@ -160,13 +168,17 @@ const Projects = () => {
 
 
         <div class="image1">
+        <Fade distance="5vh" delay={900} bottom>
             <Image
                 loader={myLoader}
                 src="plant.jpg"
                 alt="plant"
-                layout="fill"
-                objectFit="contain"
+                // layout="fill"
+                // objectFit="contain"
+                width="640"
+                height="640"
               />
+          </Fade>
           </div>
 
 
@@ -183,14 +195,18 @@ const Projects = () => {
 
 
         <div class="image2">
+        <Fade distance="5vh" delay={700} bottom>
             <Image
                 loader={myLoader}
                 class="image2"
                 src="surf.jpg"
                 alt="surf"
-                layout="fill"
-                objectFit="contain"
+                // layout="fill"
+                // objectFit="contain"
+                width="640"
+                height="640"
               />
+        </Fade>
 
           </div>
 
@@ -202,14 +218,18 @@ const Projects = () => {
 
 
         <div class="image3">
+        <Fade distance="5vh" delay={700} bottom>
             <Image
                 loader={myLoader}
                 class="image3"
                 src="desk.jpg"
                 alt="desk"
-                layout="fill"
-                objectFit="contain"
+                // layout="fill"
+                // objectFit="contain"
+                width="640"
+                height="640"
               />
+        </Fade>
         </div>
 
 

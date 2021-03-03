@@ -5,6 +5,7 @@ import PhotoCarousel from '../../components/PhotoCarousel.jsx'
 import Menu from '../../components/Menu.jsx';
 import Footer from '../../components/Footer.jsx';
 import { useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
 
 
 const myLoader = ({ src, width, quality }) => {
@@ -50,9 +51,11 @@ const Photos = () => {
       </div>
 
       <div class="about">
+        <Fade distance="5vh" delay="300" bottom>
         <p>
         I've been a passionate photographer my entire life and recieved my BFA from The University of Hawaii at Manoa in 2019. I love working with film and primarily use my Pentax 67ii and Nikonos V to capture lanscape and enviromental portraiture. Take a look at some of my photography portfolio below!
         </p>
+        </Fade>
 
       </div>
 

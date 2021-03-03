@@ -14,7 +14,7 @@ const Footer = (props) => {
   <Link href="/about"><li>About</li></Link>
   <Link href="/projects/micaela-designs"><li>Projects</li></Link>
   <Link href="/photography"><li>Photography</li></Link>
-  <li>Contact</li>
+  <Link href="/contact"><li>Contact</li></Link>
 </ul>
 <div>
   <Link href="/"><div class="henryBox"><p>henry fradley.</p></div></Link>
@@ -30,7 +30,7 @@ const Footer = (props) => {
   <Link href="/about"><li>About</li></Link>
   <Link href="/projects/micaela-designs"><li>Projects</li></Link>
   <Link href="/photography"><li>Photography</li></Link>
-  <li>Contact</li>
+  <Link href="/contact"><li>Contact</li></Link>
 </ul>
 <div>
   <Link href="/"><div class="henryBoxWhite"><p>henry fradley.</p></div></Link>

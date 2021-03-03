@@ -37,7 +37,7 @@ const Contact = () => {
 
         <div class="contactText">
           <p>I'm currently looking for new opportunities in remote software engineering. Don't hesitate to reach out if you think I'd be a good fit (or just to say hi!)</p>
-          <h4>henryfradley@gmail.com</h4>
+          <h4>fradleyhenry@gmail.com</h4>
           <div class="bigSocials">
     <a target="_blank" href="https://www.linkedin.com/in/henryfradley/"><FaLinkedin size="45px" color="#20211F"/></a>
     <a target="_blank" href="https://github.com/henryfradley"><FaGithub size="45px" color="#20211F"/></a>
@@ -45,11 +45,7 @@ const Contact = () => {
     </div>
         </div>
         </div>
-
-
       </div>
-
-
     </div>
   );
 };
