@@ -71,8 +71,29 @@ const Carousel = (props) => {
       </div>
       <p>{props.data.details}</p>
       <div class="nextProject">
-      <Link href={`/projects/${props.data.prev}`}><div class="prev"><p>PREVIOUS PROJECT</p></div></Link>
-      <Link href={`/projects/${props.data.next}`}><div class="next"><p>NEXT PROJECT</p></div></Link>
+      <Link href={`/projects/${props.data.prev}`}><div class="prev">
+      <div class="viewLeft">
+              <Image
+              src="/prevProject.png"
+              layout="fill"
+              objectFit="contain"
+              />
+              </div>
+        </div>
+      </Link>
+      <Link href={`/projects/${props.data.next}`}>
+      <div class="next">
+      <div class="viewRight">
+              <Image
+              src="/nextProject.png"
+              layout="fill"
+              objectFit="contain"
+              />
+              </div>
+        </div>
+
+
+      </Link>
 
       </div>
     </div>

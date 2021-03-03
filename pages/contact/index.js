@@ -4,6 +4,7 @@ import Menu from '../../components/Menu.jsx';
 import Form from '../../components/Form.jsx';
 import { useEffect } from 'react';
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import Fade from 'react-reveal/Fade';
 
 const Contact = () => {
 
@@ -36,12 +37,30 @@ const Contact = () => {
 
 
         <div class="contactText">
+        <Fade distance="5vh" delay="400" bottom>
           <p>I'm currently looking for new opportunities in remote software engineering. Don't hesitate to reach out if you think I'd be a good fit (or just to say hi!)</p>
+        </Fade>
+        <Fade distance="5vh" delay="700" bottom>
           <h4>fradleyhenry@gmail.com</h4>
+        </Fade>
+
+
           <div class="bigSocials">
-    <a target="_blank" href="https://www.linkedin.com/in/henryfradley/"><FaLinkedin size="45px" color="#20211F"/></a>
-    <a target="_blank" href="https://github.com/henryfradley"><FaGithub size="45px" color="#20211F"/></a>
-    <a target="_blank" href="https://www.instagram.com/henryfradley/"><FaInstagram size="45px" color="#20211F"/></a>
+          <Fade distance="5vh" delay="900" bottom>
+            <a target="_blank" href="https://www.linkedin.com/in/henryfradley/"><FaLinkedin size="45px" color="#20211F"/></a>
+          </Fade>
+          <Fade distance="5vh" delay="1100" bottom>
+            <a target="_blank" href="https://github.com/henryfradley"><FaGithub size="45px" color="#20211F"/></a>
+          </Fade>
+          <Fade distance="5vh" delay="1300" bottom>
+            <a target="_blank" href="https://www.instagram.com/henryfradley/"><FaInstagram size="45px" color="#20211F"/></a>
+
+
+          </Fade>
+
+
+
+
     </div>
         </div>
         </div>

@@ -34,8 +34,6 @@ a {
 }
 
 p {
-  margin: 0;
-  padding: 0;
   font-family: 'Poppins';
   font-size: 1.5rem;
   font-weight: 300;
@@ -141,10 +139,24 @@ body {
   grid-template-columns: 75% 25%;
 }
 
+.description {
+  padding-top: 5vh;
+  width: 40vw;
+
+}
+
+.description p {
+  line-height: 1.5;
+  font-size: 1.3rem;
+  max-width: 40vw;
+  font-family: 'Poppins';
+
+}
+
+
 .interests {
   width: fit-content;
-  margin-left: 5vw;
-
+  padding-left: 5vw;
 }
 
 
@@ -158,6 +170,7 @@ h3 {
 .interests h3 {
   padding-bottom: 1vh;
   border-bottom: 1px solid var(--white);
+  width: fit-content;
 }
 
 
@@ -178,13 +191,6 @@ h3 {
 
 
 
-.description {
-  padding-top: 5vh;
-  margin-left: 5vw;
-  font-size: 1.3rem;
-  width: 40vw;
-  line-height: 1.5;
-}
 
 .tools p {
   margin-top: 4vh;
@@ -241,8 +247,7 @@ h3 {
 }
 
 .project {
-  margin-top: 35vh;
-  margin-bottom: 30vh;
+  padding-top: 20vh;
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -251,8 +256,7 @@ h3 {
 
 
 .projectRight {
-  margin-top: 35vh;
-  margin-bottom: 30vh;
+  padding-top: 15vh;
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -271,6 +275,33 @@ h3 {
 .imageRight {
   margin-left: 0%;
 }
+
+.view {
+  cursor: pointer;
+}
+
+.viewLeft {
+  cursor: pointer;
+  position: relative;
+  width: 365.25px;
+  height: 39px;
+  width: 100%;
+  margin-left: 10%;
+  transition: ease-in-out .3s;
+}
+
+.viewRight {
+  cursor: pointer;
+  position: relative;
+  width: 365.25px;
+  height: 39px;
+  width: 100%;
+  margin-left: 10%;
+}
+
+
+
+
 
 
 
@@ -359,7 +390,7 @@ h3 {
   padding-top: 5vh;
   border-top: 1px solid rgb(179, 178, 178, .15);
   color: var(--black);
-  padding-bottom: 18vh;
+  padding-bottom: 15vh;
   margin: 0 0;
 }
 
@@ -421,7 +452,7 @@ h3 {
   min-height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: var(--tan);
+  background-color: var(--white);
 }
 
 
@@ -526,19 +557,19 @@ h3 {
   grid-template-columns: 50% 50%;
   border-top: 1px solid rgb(179, 178, 178, .15);
   margin-bottom: 0;
+  height: 15vh;
 }
 
 .prev {
   border-right: 1px solid rgb(179, 178, 178, .15);
-  width: 100%;
-  height: 18vh;
-  padding-top: 4vh;
+  display: flex;
+  align-items: center;
+
 }
 
 .next {
-  width: 100%;
-  height: 18vh;
-  padding-top: 4vh;
+  display: flex;
+  align-items: center;
 }
 
 .prev p {
@@ -748,6 +779,7 @@ h3 {
 
 
 .menuHeader {
+  margin: 0 0;
   position: absolute;
   right: 3.5vw;
   top: 1.8vh;
@@ -761,6 +793,7 @@ h3 {
 }
 
 .whiteMenuHeader {
+  margin: 0 0;
   position: absolute;
   right: 3vw;
   top: 1.8vh;
@@ -1061,22 +1094,48 @@ input {
   text-align: top;
   font-family: 'Forum';
   font-size: 1.3rem;
-  color: var(--black)
+  color: var(--black);
 }
 
+
 .send {
+  /* background-color: var(--darkGreen); */
   border: none;
   width: fit-content;
-  height: fit-content;
+  padding: 1vh 1vw;
   font-family: 'Syncopate';
   font-size: 1.2rem;
   cursor: pointer;
+  background-position: right;
+  background: linear-gradient(to left, var(--tan) 50%, var(--darkGreen) 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+  color: var(--black);
+
 }
+
+
+
+
+
+.sendFill {
+  border: none;
+  width: fit-content;
+  padding: 1vh 1vw;
+  font-family: 'Syncopate';
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: linear-gradient(to right, var(--darkGreen) 50%, var(--tan) 50%) left;
+  background-size: 200%;
+  transition: .5s ease-out;
+  color: var(--black);
+}
+
 
 .big {
   border: 1px solid var(--black);
   width: 38vw;
-  background-color: var(--tan);
+  background-color: var(--white);
   padding-bottom: 20vh;
   padding-left: 1vw;
 

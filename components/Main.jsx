@@ -43,11 +43,18 @@ const Main = () => {
         <h3>What I’m into</h3>
         </Fade>
 
+            <div class="description">
+            <Fade distance="5vh" delay={800} bottom>
+              <p>
+              I am a Full-Stack Software Engineer located in Honolulu, HI. I am an artist and a creator at heart and am currently entranced with the infinite options of creation with software engineering. I specialize in working with React.js, Next.js, and Node.js, and AWS services.
+              </p>
+            </Fade>
+              </div>
+
+
           </div>
 
-          <Fade distance="5vh" delay={800} bottom>
-            <p class="description">I am a Full-Stack Software Engineer located in Honolulu, HI. I am an artist and a creator at heart and am currently entranced with the infinite options of creation with software engineering. I specialize in working with React.js, Next.js, and Node.js, and AWS services.</p>
-          </Fade>
+
 
 
 

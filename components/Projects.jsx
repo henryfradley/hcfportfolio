@@ -58,17 +58,21 @@ const Project = (props) => {
       onMouseLeave={toggleHover}>
         <Fade distance="5vh" delay={900} bottom>
           <div class="projectArrow">
-            <div class="whiteArrowLine"></div>
-            <Link href={`/projects/${props.data.link}`}><div class="projectButton">VIEW PROJECT</div></Link>
-            <div class="smallArrow">
-            <Image
-              src="/whiteRightArrow.png"
-              alt="rightArrow"
-              layout="fill"
-              objectFit="contain"
-            />
+            <Link href={`/projects/${props.data.link}`}>
+              <div class="view">
+              <Image src="/viewProject.png"
+              width="243.5"
+              height="26"
+              />
 
-            </div>
+              </div>
+
+
+            </Link>
+
+
+
+
 
           </div>
           </Fade>
@@ -96,11 +100,18 @@ const Project = (props) => {
       onMouseLeave={toggleHover}>
         <Fade distance="5vh" delay={1100} bottom>
           <div class="projectArrow">
-            <div class="whiteArrowLine"></div>
-            <Link href={`/projects/${props.data.link}`}><div class="projectButton">VIEW PROJECT</div></Link>
-            <div class="smallArrow">
+            <Link href={`/projects/${props.data.link}`}>
+            <div class="view">
+              <Image
+              src="/viewProject.png"
+              width="243.5"
+              height="26"
+              />
 
-            </div>
+              </div>
+
+            </Link>
+
 
           </div>
           </Fade>

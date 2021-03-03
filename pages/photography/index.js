@@ -43,7 +43,7 @@ const Photos = () => {
       <div class="bigImage">
       <Image
       loader={myLoader}
-      src="shaybike.jpg"
+      src="leiday.jpg"
       alt="pile"
       layout="fill"
       objectFit="cover"
