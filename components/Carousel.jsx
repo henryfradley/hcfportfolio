@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image';
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
+  return `https://d13gv6jsteq2nf.cloudfront.net/${src}?w=${width}&q=${quality || 75}`
 }
 
 

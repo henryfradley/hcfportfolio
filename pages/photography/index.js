@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
+  return `https://d13gv6jsteq2nf.cloudfront.net/${src}?w=${width}&q=${quality || 75}`
 }
 
 
@@ -43,7 +43,7 @@ const Photos = () => {
       <div class="bigImage">
       <Image
       loader={myLoader}
-      src="leiday.jpg"
+      src="nick-square.jpg"
       alt="pile"
       layout="fill"
       objectFit="cover"

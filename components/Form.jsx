@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
+import Fade from 'react-reveal/Fade';
 
 
 const Form = (props) => {
@@ -69,9 +70,10 @@ const Form = (props) => {
     <div>
       {!submitted ?
       <form class="form" onSubmit={handleSubmit}>
-        <input onChange={handleNameChange} value={message.name} name="name" type="text" placeholder="Your Name"></input>
-        <input onChange={handleEmailChange} value={message.email} name="email" type="email" placeholder="Email"></input>
-        <input onChange={handleTextChange} value={message.text} name="message" placeholder="Type your message here..." class="big"></input>
+
+        <input required onChange={handleNameChange} value={message.name} name="name" type="text" placeholder="Your Name"></input>
+        <input required onChange={handleEmailChange} value={message.email} type="email" name="email" type="email" placeholder="Email"></input>
+        <input required onChange={handleTextChange} value={message.text} name="message" placeholder="Type your message here..." class="big"></input>
         <input class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover} onMouseLeave={toggleHover} type="submit" value="SEND"></input>
       </form>
       : <div class="thanks">

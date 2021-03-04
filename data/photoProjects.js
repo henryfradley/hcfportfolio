@@ -4,8 +4,8 @@ module.exports = {
     {
       name: 'SURFACES',
       date: '2018 - Current',
-      description: 'Some of my favorite images I\'ve captured working with my Pentax at some remote locations and others closer to home.',
-      images: ['lines', 'sandpiles', 'interwoven'],
+      description: 'A small series of close up images from one of my favorite remote destinations. I love the compression and details that happen when you get really close with medium format!',
+      images: ['interwoven', 'lines', 'piles-crop'],
       color: '#F0F7E4'
 
     },
@@ -21,7 +21,7 @@ module.exports = {
       name: 'Nikonos Explorations',
       date: '2014 - Current',
       description: 'My favorite camera is still my  trusty old Nikonos V! An amphibious film camera series that can handle anything you throw at it as long as you are sure to rinse it! These are some of my favorite photos I\'ve captured with a Nikonos over the past few years.',
-      images: [],
+      images: ['boogie', 'fish', 'nica-lines', 'canoe', 'kayak', 'foot-fire', 'shrimp', 'turtle', 'sunset', 'whale'],
       color: '#D6E0C1'
     },
 

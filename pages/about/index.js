@@ -34,13 +34,16 @@ const About = () => {
       </div></Link>
 
         <div class="aboutPage">
+
           <div class="aboutPhoto">
-            <Image
-              src="/henry.jpg"
-              layout="fill"
-              objectFit="contain"
-            />
+              <Image
+                src="/henry.jpg"
+                layout="fill"
+                objectFit="contain"
+              />
           </div>
+
+
           <div class="aboutText">
           <Fade distance="5vh" delay={400} bottom>
             <h3>I'm Henry, a software engineer based in Honolulu, HI.</h3>
@@ -53,13 +56,16 @@ const About = () => {
             <p>I'm currently looking for remote oppurtunities in software engineering! If you would like to reach out or just say hi send me a message!</p>
           </Fade>
 
-
+          <Fade distance="5vh" delay={1100} bottom>
             <Link href="../contact">
             <div class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}>
               GET IN TOUCH
             </div>
             </Link>
+
+          </Fade>
+
 
 
             </div>

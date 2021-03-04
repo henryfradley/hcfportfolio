@@ -98,6 +98,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .henryBox p {
   font-family: 'Forum';
   font-size: 1.7rem;
@@ -346,6 +348,7 @@ body {
 
 .whiteFooter {
   padding-top: 8vh;
+  padding-bottom: 8vh;
   border-top: 1px solid rgb(179, 178, 178, .15);
   display: grid;
   grid-template-columns: 40% 60%;
@@ -453,8 +456,21 @@ body {
   color: var(--black);;
 }
 .henryBoxWhite {
-  font-family: 'Forum';
   margin-left: 5vw;
+  font-family: 'Forum';
+  width: 200px;
+  height: 54px;
+  border: 1px solid var(--black);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .1rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.henryBoxWhiteFooter {
+  font-family: 'Forum';
   width: 200px;
   height: 54px;
   border: 1px solid var(--black);;
@@ -800,7 +816,7 @@ body {
   width: 43px;
   height: 25px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 
