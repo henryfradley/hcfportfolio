@@ -86,6 +86,18 @@ body {
   cursor: pointer;
 }
 
+.henryBoxFooter {
+  margin-top: 0;
+  width: 200px;
+  height: 54px;
+  border: 1px solid var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
 .henryBox p {
   font-family: 'Forum';
   font-size: 1.7rem;
@@ -327,9 +339,9 @@ body {
   padding-top: 8vh;
   padding-bottom: 8vh;
   border-top: 1px solid rgb(179, 178, 178, .15);
-  display: grid;
-  grid-template-columns: 40% 60%;
   background-color: var(--black);
+  display: flex;
+  justify-content: center;
 }
 
 .whiteFooter {
@@ -338,6 +350,8 @@ body {
   display: grid;
   grid-template-columns: 40% 60%;
   background-color: var(--tan);
+  display: flex;
+  justify-content: center;
 }
 
 .footNav {
@@ -387,10 +401,20 @@ body {
   padding-right: 30px;
   margin-top: 2vh;
   width: 200px;
-  margin-left: 5vw;
   display: flex;
   justify-content: space-between;
 }
+
+
+.centerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+
+
+
 
 .projectPage {
   padding-top: 5vh;
@@ -446,6 +470,8 @@ body {
   color: var(--black);
   font-family: 'Forum';
   font-size: 1.7rem;
+  z-index: 1;
+  border: 1px solid var(--blacks);
 }
 
 
@@ -884,7 +910,7 @@ body {
 
 
 .closed {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   animation: slideOut ease .5s;
@@ -925,6 +951,13 @@ body {
 }
 
 
+@keyframes popUp {
+  0% {opacity: 0; transform: translateY(5vh);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+
+
 
 
 .link {
@@ -936,10 +969,14 @@ body {
   color: rgb(176, 204, 118, .05);
   -webkit-text-stroke: 1px var(--white);
   cursor: pointer;
-  transition: .3s ease-in-out;
+  /* transition: .3s ease-in-out; */
   width: fit-content;
   z-index: 9;
-
+  /* animation-delay: .5s; */
+  animation-name: popUp;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .selected {
@@ -950,9 +987,14 @@ body {
   color: var(--white);
   -webkit-text-stroke: 1px var(--white);
   cursor: pointer;
-  transition: .3s ease-in-out;
+  /* transition: .3s ease-in-out; */
   width: fit-content;
   z-index: 9;
+  /* animation-delay: .5s; */
+  animation-name: popUp;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 
@@ -961,8 +1003,8 @@ body {
 
 
 .henryBoxMenu {
+  position: fixed;
   animation: slideIn ease .5s;
-  position: absolute;
   margin-top: 5vh;
   margin-left: 5vw;
   width: 200px;
@@ -972,7 +1014,7 @@ body {
   justify-content: center;
   align-items: center;
   letter-spacing: .1rem;
-  z-index: 7;
+  z-index: 9;
   cursor: pointer;
 }
 
@@ -1120,6 +1162,17 @@ body {
 .icons {
   color: var(--black);
   transition: ease-in-out .3s;
+}
+
+.whiteIcons {
+  color: var(--white);
+  transition: ease-in-out .3s;
+}
+
+.whiteIcons :hover {
+  color: var(--darkGreen);
+  transition: ease-in-out .3s;
+
 }
 
 
@@ -1281,6 +1334,41 @@ input {
   position: relative;
 }
 
+.thanks {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--tan);
+  z-index: -1;
+  animation-name: slidePage;
+  animation-duration: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@keyframes slidePage {
+  0% {transform: translateX(-500px)}
+  100% {transform: translateX(0px)}
+}
+
+.thanks div {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  border-right: 1px solid rgb(179, 178, 178, .15);
+}
+
+.thanks h1 {
+  color: var(--black);
+  width: 45%;
+  text-align: center;
+  line-height: 1.5;
+}
 
 
 

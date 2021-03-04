@@ -74,7 +74,14 @@ const Form = (props) => {
         <input onChange={handleTextChange} value={message.text} name="message" placeholder="Type your message here..." class="big"></input>
         <input class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover} onMouseLeave={toggleHover} type="submit" value="SEND"></input>
       </form>
-      : <div></div>
+      : <div class="thanks">
+        <div></div>
+        <h1>
+          Thanks for messaging! Talk to you soon
+        </h1>
+
+
+        </div>
       }
 
     </div>

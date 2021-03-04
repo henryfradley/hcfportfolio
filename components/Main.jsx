@@ -6,8 +6,6 @@ import Fade from 'react-reveal/Fade';
 
 const Main = () => {
 
-
-
   return (
     <div class="main">
 
@@ -17,13 +15,9 @@ const Main = () => {
         <h1>Hi, I’m Henry.</h1>
       </Fade>
 
-
       <Fade distance="4vh" delay={800} bottom>
         <h2>I build things for the web.</h2>
       </Fade>
-
-
-
 
       <div class="spinHolder">
         <Image
@@ -53,12 +47,6 @@ const Main = () => {
 
 
           </div>
-
-
-
-
-
-
         </div>
         <div class="tools">
           <div class="myTools">
@@ -66,17 +54,11 @@ const Main = () => {
             <h3>My tools</h3>
           </Fade>
 
-
           </div>
           <Fade distance="5vh" delay={800} bottom>
             <p>React.js, Next.js, Javascript, SASS, MySQL, Postgres, HTML, CSS, AWS, Express, Node.js</p>
           </Fade>
-
-
-
         </div>
-
-
 
       </div>
     </div>

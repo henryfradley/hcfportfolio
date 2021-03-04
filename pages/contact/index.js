@@ -17,7 +17,6 @@ const Contact = () => {
 
   return (
     <div>
-
       <div class="whiteBackgroundLines">
         <div></div>
         <div></div>

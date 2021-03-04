@@ -40,17 +40,11 @@ const Menu = (props) => {
     return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
   }
 
-  const linkList = [['HOME', '../', 400], ['ABOUT', '/about', 500], ['PROJECTS', '/projects/micaela-designs', 600], ['PHOTOGRAPHY', '/photography', 700], ['CONTACT', '/contact', 800]];
+  const linkList = [['HOME', '../', 400], ['ABOUT', '/about', 600], ['PROJECTS', '/projects/micaela-designs', 800], ['PHOTOGRAPHY', '/photography', 1000], ['CONTACT', '/contact', 1200]];
 
-
-
-  // const links = linkList.map(link => {
-  //     return <Fade class="topFade" distance="5vh" delay={link[2]} bottom>
-  //     <Link href={link[1]}><li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link></Fade>
-  // });
 
   const links = linkList.map(link => {
-    return <Link href={link[1]}><li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link>
+    return <Link href={link[1]}><li class={setClassName(link)} style={{animationDelay: `${link[2]}ms`}} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link>
 });
 
 
@@ -59,16 +53,14 @@ const Menu = (props) => {
 
 
   return (
-
-
     <div>
-
       {!visible ?
       <div>
       <div class="menu">
         {!props.black ? <p class="whiteMenuHeader">{props.name}</p> : <p class="menuHeader">{props.name}</p>}
 
-        {!props.black ? <Image
+        {!props.black ?
+          <Image
             onClick={showMenu}
             src="/whiteMenu.png"
             alt="menu"
@@ -81,21 +73,20 @@ const Menu = (props) => {
             alt="menu"
             layout="fill"
             objectFit="contain"
-          />
-          }
-      </div></div> : <p onClick={hideMenu} class="menu">X</p>}
+          />}
+        </div>
+      </div> : <p onClick={hideMenu} class="menu">X</p>}
 
       {visible ?
       <div>
-
         <Link href="/"><div class="henryBoxMenu"><p>henry fradley.</p></div></Link>
         <div class="menuPage">
-        <div class="greenBackgroundLines">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+          <div class="greenBackgroundLines">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         <div class="pageList">
           <ul class="pages">
             {links}
@@ -114,21 +105,11 @@ const Menu = (props) => {
           </div>
           </Fade>
 
-
-
       </div>
 
-      </div>
-      : null
-      }
+      </div> : null}
 
-      {
-      closed ?
-      <div class="closed"></div>
-      : null
-      }
-
-
+      {closed ? <div class="closed"></div> : null}
 
     </div>
 
