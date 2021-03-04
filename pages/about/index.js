@@ -54,10 +54,6 @@ const About = () => {
           </Fade>
 
 
-
-
-
-
             <Link href="../contact">
             <div class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}>

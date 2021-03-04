@@ -874,12 +874,14 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   z-index: 3;
-
 }
 
-.menuPhoto {
+/* .menuPhoto {
   position: relative;
-}
+  z-index: -1;
+} */
+
+
 
 .closed {
   position: absolute;
@@ -924,16 +926,20 @@ body {
 
 
 
+
 .link {
   list-style: none;
   font-family: 'Syncopate', sans-serif;
   font-size: 3.2rem;
   letter-spacing: .15rem;
-  color: var(--darkGreen);
+  /* color: var(--darkGreen); */
+  color: rgb(176, 204, 118, .05);
   -webkit-text-stroke: 1px var(--white);
   cursor: pointer;
   transition: .3s ease-in-out;
   width: fit-content;
+  z-index: 9;
+
 }
 
 .selected {
@@ -946,7 +952,10 @@ body {
   cursor: pointer;
   transition: .3s ease-in-out;
   width: fit-content;
+  z-index: 9;
 }
+
+
 
 
 
@@ -989,6 +998,7 @@ body {
   width: 100%;
   height: 60vh;
 }
+
 
 .aboutText {
   margin-top: 8vh;

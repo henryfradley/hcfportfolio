@@ -44,10 +44,15 @@ const Menu = (props) => {
 
 
 
+  // const links = linkList.map(link => {
+  //     return <Fade class="topFade" distance="5vh" delay={link[2]} bottom>
+  //     <Link href={link[1]}><li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link></Fade>
+  // });
+
   const links = linkList.map(link => {
-      return <Fade distance="5vh" delay={link[2]} bottom>
-      <Link href={link[1]}><li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link></Fade>
-  });
+    return <Link href={link[1]}><li class={setClassName(link)} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link>
+});
+
 
 
 
