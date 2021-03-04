@@ -15,7 +15,7 @@ module.exports = {
       left: false,
       link: 'swell-tracker',
       name: 'Swell Tracker',
-      tech: 'React, Node.js, Express',
+      tech: 'React, Node.js, Express, Axios',
       mainImg: 'link..',
       details: 'This project.... blah bla blah.... wefhwfewifhiwhfehwfihewifhewifuiewhfiuewhfewiuhfiuewhfuihwifuhwfihefiuwehfiuw',
       images: ['swelltracker', '2.jpg', '3.jpg'],

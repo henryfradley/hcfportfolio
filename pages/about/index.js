@@ -42,13 +42,14 @@ const About = () => {
             />
           </div>
           <div class="aboutText">
-          <Fade distance="5vh" delay="400" bottom>
+          <Fade distance="5vh" delay={400} bottom>
             <h3>I'm Henry, a software engineer based in Honolulu, HI.</h3>
           </Fade>
-          <Fade distance="5vh" delay="700" bottom>
-            <p>I have always loved building and creating with all types of shit! I'm also a C team member of the downwind foiling club! coding is cool! More words!! I have always loved building and creating with all types of shit! I'm also a C team member of the downwind foiling club! coding is cool! More words!! </p>
+          <Fade distance="5vh" delay={700} bottom>
+            <p>I love software engineering because of how accessible and open-ended the possibilities are to build and create with just a computer! My eye for detail and style plays into my necessity for clean code and focusing on the user experience and appearance of my projects to ensure they are visually striking and easy to use.
+            </p>
           </Fade>
-          <Fade distance="5vh" delay="900" bottom>
+          <Fade distance="5vh" delay={900} bottom>
             <p>I'm currently looking for remote oppurtunities in software engineering! If you would like to reach out or just say hi send me a message!</p>
           </Fade>
 

@@ -97,14 +97,12 @@ const Menu = (props) => {
           </ul>
         </div>
 
-        <Fade distance="5vh" delay="1200" bottom>
+        <Fade distance="5vh" delay={1200} bottom>
           <div class="menuPhoto">
           <Image
             loader={myLoader}
             src={`${images[index]}.jpg`}
             alt="photo"
-            // layout="fill"
-            // objectFit="contain"
             width="625"
             height="500"
           />

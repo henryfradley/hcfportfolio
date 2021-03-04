@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import axios from 'axios';
 
 
 const Form = (props) => {
@@ -10,6 +11,8 @@ const Form = (props) => {
     email: '',
     text: ''
   });
+
+  const [submitted, setSubmit] = useState(false);
 
   const [ hover, setHover ] = useState(true);
 
@@ -38,6 +41,23 @@ const Form = (props) => {
     }));
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios({
+      method: 'POST',
+      url: '/send',
+      data: {
+        name: message.name,
+        email: message.email,
+        message: message.text,
+      }
+    })
+
+    setSubmit(true);
+
+
+  };
+
   const toggleHover = () => {
     setHover(!hover);
   };
@@ -46,20 +66,19 @@ const Form = (props) => {
 
 
   return (
-    <form class="form">
-      <input onChange={handleNameChange} value={message.name} name="name" type="text" placeholder="Your Name"></input>
-      <input onChange={handleEmailChange} value={message.email} name="email" type="email" placeholder="Email"></input>
-      <input onChange={handleTextChange} value={message.text} name="message" placeholder="Type your message here..." class="big"></input>
+    <div>
+      {!submitted ?
+      <form class="form" onSubmit={handleSubmit}>
+        <input onChange={handleNameChange} value={message.name} name="name" type="text" placeholder="Your Name"></input>
+        <input onChange={handleEmailChange} value={message.email} name="email" type="email" placeholder="Email"></input>
+        <input onChange={handleTextChange} value={message.text} name="message" placeholder="Type your message here..." class="big"></input>
+        <input class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover} onMouseLeave={toggleHover} type="submit" value="SEND"></input>
+      </form>
+      : <div></div>
+      }
 
+    </div>
 
-        <input class={hover ? "send" : "sendFill"}
-         onMouseEnter={toggleHover}
-      onMouseLeave={toggleHover} type="submit" value="SEND"></input>
-
-
-
-
-    </form>
   );
 };
 

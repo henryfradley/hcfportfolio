@@ -51,7 +51,7 @@ const Photos = () => {
       </div>
 
       <div class="about">
-        <Fade distance="5vh" delay="300" bottom>
+        <Fade distance="5vh" delay={300} bottom>
         <p>
         I've been a passionate photographer my entire life and recieved my BFA from The University of Hawaii at Manoa in 2019. I love working with film and primarily use my Pentax 67ii and Nikonos V to capture lanscape and enviromental portraiture. Take a look at some of my photography portfolio below!
         </p>

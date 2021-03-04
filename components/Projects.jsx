@@ -32,8 +32,6 @@ const Project = (props) => {
           loader={myLoader}
           src={`${props.data.images[0]}.png`}
           alt="highlight"
-          // layout="fill"
-          // objectFit="contain"
           width="600"
           height="337.5"
           />
@@ -49,21 +47,19 @@ const Project = (props) => {
         </Fade>
 
 
-          <div class={hover ? "moveBack" : "move"} onMouseEnter={toggleHover}
-      onMouseLeave={toggleHover}>
+          <div>
         <Fade distance="5vh" delay={900} bottom>
-          <div class="projectArrow">
+          <div>
             <Link href={`/projects/${props.data.link}`}>
-              <div class="view">
-              <Image src="/viewProject.png"
-              width="243.5"
-              height="26"
-              />
-
-              </div>
-
-
+            <div class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover}
+            onMouseLeave={toggleHover}>
+              VIEW PROJECT
+            </div>
             </Link>
+
+
+
+
 
 
 
@@ -91,21 +87,13 @@ const Project = (props) => {
         </Fade>
 
 
-          <div class={hover ? "moveBack" : "move"} onMouseEnter={toggleHover}
-      onMouseLeave={toggleHover}>
-          <div class="projectArrow">
-            <Link href={`/projects/${props.data.link}`}>
-            <div class="view">
-            <Fade distance="5vh" delay={1100} bottom>
-              <Image
-              src="/viewProject.png"
-              width="243.5"
-              height="26"
-              />
-            </Fade>
-
-              </div>
-
+          <div>
+          <div>
+          <Link href={`/projects/${props.data.link}`}>
+            <div class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover}
+            onMouseLeave={toggleHover}>
+              VIEW PROJECT
+            </div>
             </Link>
 
 
