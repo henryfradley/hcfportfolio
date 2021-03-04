@@ -17,6 +17,7 @@ const Project = () => {
   const { id } = router.query
   const data = projects[id];
 
+
   return (
     <div>
       <Menu black={true} name={"PROJECTS"}/>
@@ -39,7 +40,14 @@ const Project = () => {
         <div class="projectTools">
           <h3>Tools</h3>
           <h4>{data.tech}</h4>
-          <div class="livesite">LIVE SITE</div>
+          <div class="liveLinks">
+            <a target="_blank" href={data.git}>GITHUB</a>
+            {data.live ?
+            <a target="_blank" href={data.live}>LIVE SITE</a> :
+            null
+            }
+          </div>
+
         </div>
 
       </div>

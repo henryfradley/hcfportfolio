@@ -19,12 +19,7 @@ const Project = (props) => {
     setHover(!hover);
   };
 
-  const arrow = <Image
-  src="/whiteRightArrow.png"
-  alt="rightArrow"
-  layout="fill"
-  objectFit="contain"
-  />
+
 
 
   return (
@@ -98,15 +93,16 @@ const Project = (props) => {
 
           <div class={hover ? "moveBack" : "move"} onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}>
-        <Fade distance="5vh" delay={1100} bottom>
           <div class="projectArrow">
             <Link href={`/projects/${props.data.link}`}>
             <div class="view">
+            <Fade distance="5vh" delay={1100} bottom>
               <Image
               src="/viewProject.png"
               width="243.5"
               height="26"
               />
+            </Fade>
 
               </div>
 
@@ -114,7 +110,7 @@ const Project = (props) => {
 
 
           </div>
-          </Fade>
+
 
           </div>
 

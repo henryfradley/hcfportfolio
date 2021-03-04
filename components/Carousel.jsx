@@ -12,10 +12,18 @@ const Carousel = (props) => {
   const images = props.data.images;
   const length = images.length - 1;
 
-  console.log('images', images)
-
   const [ image, setImage ] = useState(images[0]);
   const [ index, setIndex ] = useState(0);
+  const [ hover, setHover ] = useState(true);
+  const [ left, moveLeft ] = useState(true);
+  const [ right, moveRight ] = useState(true);
+  const toggleMoveRight = () => {
+    moveRight(!right);
+  };
+
+  const toggleMoveLeft = () => {
+    moveLeft(!left);
+  };
 
   const nextImage = () => {
     {index < length ? setIndex(index + 1) : setIndex(0)}
@@ -49,7 +57,7 @@ const Carousel = (props) => {
 
       </div>
 
-      <h3>Feature Description</h3>
+      {/* <h3>Feature Description</h3> */}
       <div class="projArrows">
           <div onClick={prevImage} class="arrow">
           <Image
@@ -69,10 +77,12 @@ const Carousel = (props) => {
             />
           </div>
       </div>
-      <p>{props.data.details}</p>
+      {/* <p>{props.data.details}</p> */}
       <div class="nextProject">
       <Link href={`/projects/${props.data.prev}`}><div class="prev">
-      <div class="viewLeft">
+
+      <div class={left ? "viewLeft" : "viewLeftHover"} onMouseEnter={toggleMoveLeft}
+      onMouseLeave={toggleMoveLeft}>
               <Image
               src="/prevProject.png"
               layout="fill"
@@ -83,7 +93,8 @@ const Carousel = (props) => {
       </Link>
       <Link href={`/projects/${props.data.next}`}>
       <div class="next">
-      <div class="viewRight">
+      <div class={right ? "viewRight" : "viewRightHover"} onMouseEnter={toggleMoveRight}
+      onMouseLeave={toggleMoveRight}>
               <Image
               src="/nextProject.png"
               layout="fill"

@@ -5,7 +5,9 @@ module.exports = {
     images: ['micaelaDesigns1', 'micaelaDesigns2', 'micaelaDesigns3'],
     tech: 'React, Node.js, Express, SASS',
     next: 'swell-tracker',
-    prev: 'help-our-home'
+    prev: 'help-our-home',
+    git: 'https://github.com/henryfradley/micaelaCreates',
+    live: 'http://micaelarobinson.com/'
   },
   'swell-tracker': {
     name: 'SwellTracker',
@@ -13,7 +15,9 @@ module.exports = {
     images: ['1.jpg', '2.jpg', '3.jpg'],
     tech: 'React, Node.js, SASS',
     next: 'relax',
-    prev: 'micaela-designs'
+    prev: 'micaela-designs',
+    git: 'https://github.com/henryfradley/SwellTracker'
+
   },
   'relax': {
     name: 'Relax',
@@ -21,14 +25,17 @@ module.exports = {
     images: ['1.jpg', '2.jpg', '3.jpg'],
     tech: 'React, Node.js, SASS',
     next: 'help-our-home',
-    prev: 'swell-tracker'
+    prev: 'swell-tracker',
+    git: 'https://github.com/hrr49-greyjoy/Henry-service'
   },
-  'help-our-home': {
-    name: 'Help Our Home',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    images: ['1.jpg', '2.jpg', '3.jpg'],
-    tech: 'React, Node.js, SASS',
-    next: 'micaela-designs',
-    prev: 'relax'
-  }
+  // 'help-our-home': {
+  //   name: 'Help Our Home',
+  //   details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  //   images: ['1.jpg', '2.jpg', '3.jpg'],
+  //   tech: 'React, Node.js, SASS',
+  //   next: 'micaela-designs',
+  //   prev: 'relax',
+  //   git: ''
+
+  // }
 };

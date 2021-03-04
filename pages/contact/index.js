@@ -41,7 +41,7 @@ const Contact = () => {
           <p>I'm currently looking for new opportunities in remote software engineering. Don't hesitate to reach out if you think I'd be a good fit (or just to say hi!)</p>
         </Fade>
         <Fade distance="5vh" delay="700" bottom>
-          <h4>fradleyhenry@gmail.com</h4>
+          <a href="mailto:fradleyhenry@gmail.com">fradleyhenry@gmail.com</a>
         </Fade>
 
 

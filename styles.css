@@ -29,7 +29,7 @@ h4
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   margin: 0 0;
 }
 
@@ -289,6 +289,16 @@ h3 {
   margin-left: 10%;
   transition: ease-in-out .3s;
 }
+.viewLeftHover {
+  cursor: pointer;
+  position: relative;
+  width: 365.25px;
+  height: 39px;
+  width: 100%;
+  margin-left: 9%;
+  transition: ease-in-out .3s;
+
+}
 
 .viewRight {
   cursor: pointer;
@@ -297,7 +307,23 @@ h3 {
   height: 39px;
   width: 100%;
   margin-left: 10%;
+  transition: ease-in-out .3s;
 }
+
+.viewRightHover {
+  cursor: pointer;
+  position: relative;
+  width: 365.25px;
+  height: 39px;
+  width: 100%;
+  margin-left: 11%;
+  transition: ease-in-out .3s;
+
+}
+
+
+
+
 
 
 
@@ -359,7 +385,11 @@ h3 {
   padding-bottom: .05rem;
   width: fit-content;
   cursor: pointer;
+
 }
+
+
+
 
 .whiteFootNav {
   margin-left: 5vw;
@@ -449,7 +479,7 @@ h3 {
   position: absolute;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
   z-index: -1;
   background-color: var(--white);
@@ -473,24 +503,34 @@ h3 {
 
 .projectTools {
   margin-top: 20vh;
-  border: 1px solid var(--black);;
+  padding: 5vh 2.5vw;
   margin-left: 15vw;
   width: 20vw;
-  background-color: var(--tan);
+  background-color: var(--white);
+  border: 1px solid var(--black);
 }
 
 .projectTools h3 {
-  margin-left: 2.5vw;
-  margin-top: 12%;
   font-size: 2.2rem;
+  margin: 0 0;
 }
 
 .projectTools h4 {
-  margin-left: 2.5vw;
-  margin-top: 18%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   font-size: 1.2rem;
   font-family: sans-serif;
-  width: 50%;
+  width: 10vw;
+}
+
+.projectTools a {
+  width: 100%;
+  font-size: 1.3rem;
+  color: var(--black);
+  font-family: 'Poppins';
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin-bottom: 2.5vh;
 }
 
 .livesite {
@@ -503,6 +543,11 @@ h3 {
   color: var(--black);;
   width: 60%;
   margin-left: 20%;
+}
+
+.liveLinks {
+  display: grid;
+  grid-template-columns: 100%;
 }
 
 .carousel {
@@ -572,22 +617,7 @@ h3 {
   align-items: center;
 }
 
-.prev p {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Syncopate';
-  cursor: pointer;
-}
-.next p {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Syncopate';
-  cursor: pointer;
-}
+
 
 
 .photoHead {
@@ -869,6 +899,10 @@ h3 {
 
 }
 
+.menuPhoto {
+  position: relative;
+}
+
 .closed {
   position: absolute;
   height: 100vh;
@@ -910,10 +944,7 @@ h3 {
   justify-content: space-between;
 }
 
-@keyframes slideAppear {
-  0% {transform: translateY(500px); opacity: 0;}
-  100% {transform: translateY(0); opacity: 1;}
-}
+
 
 .link {
   list-style: none;
@@ -924,7 +955,7 @@ h3 {
   -webkit-text-stroke: 1px var(--white);
   cursor: pointer;
   transition: .3s ease-in-out;
-
+  width: fit-content;
 }
 
 .selected {
@@ -936,7 +967,7 @@ h3 {
   -webkit-text-stroke: 1px var(--white);
   cursor: pointer;
   transition: .3s ease-in-out;
-
+  width: fit-content;
 }
 
 
@@ -1060,7 +1091,7 @@ h3 {
   font-size: 1.8rem;
 }
 
-.contactText h4 {
+.contactText a {
   font-size: 1.2rem;
   margin-top: 4vh;
   color: var(--black);
