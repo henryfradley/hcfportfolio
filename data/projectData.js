@@ -7,7 +7,7 @@ module.exports = {
       tech: 'React, Node.js, Express, SASS',
       images: ['micaela1', 'micaela2', 'micaela3', 'micaela4'],
       next: 'swell-tracker',
-      prev: 'help-our-home'
+      prev: 'relax-camping'
     },
     {
       left: false,
@@ -15,12 +15,12 @@ module.exports = {
       name: 'Swell Tracker',
       tech: 'React, Node.js, Express, Axios',
       images: ['swell-tracker'],
-      next: 'relax',
+      next: 'relax-camping',
       prev: 'micaela-creates'
     },
     {
       left: true,
-      link: 'relax',
+      link: 'relax-camping',
       name: 'Relax Camping',
       tech: 'React, Node.js, Express, EC2',
       images: ['relax2'],

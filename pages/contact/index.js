@@ -42,13 +42,14 @@ const Contact = () => {
 
           <div class="bigSocials">
             <Fade distance="5vh" delay={900} bottom>
-              <a target="_blank" href="https://www.linkedin.com/in/henryfradley/"><FaLinkedin size="45px" class="icons" /></a>
+
+              <a target="_blank" class="icons" href="https://www.linkedin.com/in/henryfradley/"><FaLinkedin size="45px" class="icons" /></a>
             </Fade>
             <Fade distance="5vh" delay={1100} bottom>
-              <a target="_blank" href="https://github.com/henryfradley"><FaGithub size="45px" class="icons"/></a>
+              <a target="_blank" class="icons" href="https://github.com/henryfradley"><FaGithub size="45px" class="icons"/></a>
             </Fade>
             <Fade distance="5vh" delay={1300} bottom>
-              <a target="_blank" href="https://www.instagram.com/henryfradley/"><FaInstagram size="45px" class="icons"/></a>
+              <a target="_blank" class="icons" href="https://www.instagram.com/henryfradley/"><FaInstagram size="45px" class="icons"/></a>
             </Fade>
           </div>
         </div>

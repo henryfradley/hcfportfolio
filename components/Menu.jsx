@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router'
 import Image from 'next/image';
 import Link from 'next/link';
 import Fade from 'react-reveal/Fade';
 import { CgClose } from "react-icons/cg";
 
 const Menu = (props) => {
+
+  const router = useRouter();
+  const path = router.asPath;
 
   const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(false);
@@ -23,6 +27,12 @@ const Menu = (props) => {
     document.body.style.overflow = 'visible'
   };
 
+  const checkLink = (src) => {
+    if (src === path) {
+      return hideMenu();
+    }
+  }
+
   const setClassName = function(name) {
     if (linkList.indexOf(name) === index) {
       return 'selected'
@@ -36,10 +46,12 @@ const Menu = (props) => {
   }
 
   const images = ['wilhelmina', 'bubbles', 'trolling', 'rock', 'clouds'];
-  const linkList = [['HOME', './', 400], ['ABOUT', '/about', 600], ['PROJECTS', '/projects/micaela-designs', 800], ['PHOTOGRAPHY', '/photography', 1000], ['CONTACT', '/contact', 1200]];
+  const linkList = [['HOME', '../', 400], ['ABOUT', '/about', 600], ['PROJECTS', '/projects/micaela-designs', 800], ['PHOTOGRAPHY', '/photography', 1000], ['CONTACT', '/contact', 1200]];
 
   const links = linkList.map(link => {
-    return <Link href={link[1]}><li class={setClassName(link)} style={{animationDelay: `${link[2]}ms`}} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link>
+    return <div onMouseDown={() => {
+      checkLink(link[1])
+    }}><Link href={link[1]}><li class={setClassName(link)} style={{animationDelay: `${link[2]}ms`}} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link></div>
 });
 
 
@@ -91,7 +103,6 @@ const Menu = (props) => {
       </div> : null}
       {closed ? <div class="closed"></div> : null}
     </div>
-
   );
 };
 

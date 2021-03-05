@@ -42,7 +42,6 @@ a {
   text-decoration: none;
   color: var(--white);
   margin: 0 0;
-  transition: .3s ease-in-out;
 }
 
 p {
@@ -520,7 +519,7 @@ p {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   height: fit-content;
-  min-height: 800px;
+  min-height: 1000px;
   width: 100%;
   z-index: -1;
   background-color: var(--white);
@@ -550,6 +549,7 @@ p {
 .projectTools {
   margin-top: 20vh;
   padding: 5vh 2.5vw;
+  padding-bottom: 2.5vh;
   margin-left: 15vw;
   width: 20vw;
   height: 45vh;
@@ -579,13 +579,13 @@ p {
 }
 
 .projectTools a {
-  width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--black);
-  font-family: 'Poppins';
+  font-family: 'Syncopate';
   font-weight: 700;
   letter-spacing: .1rem;
   margin-bottom: 2.5vh;
+  padding: 1vh 0;
 }
 
 .livesite {
@@ -600,15 +600,10 @@ p {
   margin-left: 20%;
 }
 
-.liveLinks {
-  display: grid;
-  grid-template-columns: 100%;
-}
 
-.liveLinks a:hover {
-  color: var(--darkGreen);
-  transition: .3s ease-in-out;
-}
+
+
+
 
 .carousel {
   margin: 0 0;
@@ -845,7 +840,7 @@ p {
   top: 4vh;
   color: var(--black);
   display: inline-block;
-  width: 150px;
+  width: 200px;
   font-family: 'Syncopate', sans-serif;
   font-size: .8rem;
   text-align: right;
@@ -1016,7 +1011,7 @@ p {
 
 .link {
   list-style: none;
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Syncopate';
   font-size: 3.2rem;
   letter-spacing: .15rem;
   color: rgb(176, 204, 118, .05);
@@ -1092,8 +1087,9 @@ p {
   height: 60vh;
   overflow: hidden;
   margin-left: 10vw;
-  animation-delay: 500ms;
-  animation: popUp ease .7s;
+  animation-delay: 900ms;
+  animation: popUp;
+  animation-duration: 800ms;
 }
 
 
@@ -1222,6 +1218,12 @@ p {
   display: flex;
   flex-direction: column;
   padding: 0 0;
+  animation-delay: 800ms;
+  animation-name: popUp;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
 }
 
 .icons {
@@ -1266,6 +1268,7 @@ input {
 
 .send {
   /* background-color: var(--darkGreen); */
+  padding: 1vh 1vw;
   border: none;
   width: fit-content;
   padding: 1vh 1vw;
@@ -1280,10 +1283,6 @@ input {
 
 }
 
-
-
-
-
 .sendFill {
   border: none;
   width: fit-content;
@@ -1297,6 +1296,40 @@ input {
   color: var(--black);
 }
 
+
+.linkHolder {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.checkout {
+  background-position: right;
+  background: linear-gradient(to left, var(--tan) 50%, var(--darkGreen) 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+.checkoutFill {
+  cursor: pointer;
+  background: linear-gradient(to right, var(--darkGreen) 50%, var(--tan) 50%) left;
+  background-size: 200%;
+  transition: .5s ease-out;
+  color: var(--black);
+  text-align: center;
+}
 
 .big {
   border: 1px solid var(--black);
