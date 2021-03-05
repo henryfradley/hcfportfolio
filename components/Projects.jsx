@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://henry-website.s3-us-west-1.amazonaws.com/${src}?w=${width}&q=${quality || 75}`
+  return `https://d13gv6jsteq2nf.cloudfront.net/${src}?w=${width}&q=${quality || 75}`
 }
 
 const Project = (props) => {
@@ -166,8 +166,8 @@ const Projects = () => {
         <Fade distance="5vh" delay={900} bottom>
             <Image
                 loader={myLoader}
-                src="plant.jpg"
-                alt="plant"
+                src="birds.jpg"
+                alt="birds"
                 // layout="fill"
                 // objectFit="contain"
                 width="640"
@@ -194,7 +194,7 @@ const Projects = () => {
             <Image
                 loader={myLoader}
                 class="image2"
-                src="surf.jpg"
+                src="desk.jpg"
                 alt="surf"
                 // layout="fill"
                 // objectFit="contain"
@@ -217,7 +217,7 @@ const Projects = () => {
             <Image
                 loader={myLoader}
                 class="image3"
-                src="desk.jpg"
+                src="cole-beach.jpg"
                 alt="desk"
                 // layout="fill"
                 // objectFit="contain"

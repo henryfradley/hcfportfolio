@@ -27,14 +27,8 @@ const Photos = () => {
 
 
   return (
-    <div>
+    <div class="photosPage">
       <Menu black="true" name="PHOTOGRAPHY"/>
-      <div class="photoBackgroundLines">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
     <div>
       <Link href="../"><div class="hcfLogo"><p>henry fradley.</p></div></Link>
 
@@ -53,7 +47,7 @@ const Photos = () => {
       <div class="about">
         <Fade distance="5vh" delay={300} bottom>
         <p>
-        I've been a passionate photographer my entire life and recieved my BFA from The University of Hawaii at Manoa in 2019. I love working with film and primarily use my Pentax 67ii and Nikonos V to capture lanscape and enviromental portraiture. Take a look at some of my photography portfolio below!
+        I've been a passionate photographer my entire life and recieved my BFA with a specialization in photography from The University of Hawaii at Manoa in 2019. I love working with film and primarily use my Pentax 67ii and Nikonos V to capture landscape and enviromental portraiture. Take a look at some of my photography portfolio below!
         </p>
         </Fade>
 

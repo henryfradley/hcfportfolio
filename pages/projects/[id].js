@@ -20,7 +20,7 @@ const Project = () => {
 
 
   return (
-    <div>
+    <div class="projectsHolder">
       <Menu black={true} name={"PROJECTS"}/>
       <div class="whiteBackgroundLines">
         <div></div>

@@ -27,6 +27,12 @@ h4
   color: var(--offwhite);
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
 h3 {
   font-size: 2.2rem;
   letter-spacing: .1rem;
@@ -44,16 +50,16 @@ p {
   font-weight: 300;
 }
 
-body {
-  overflow-x: hidden;
+/* body {
+  overflow: hidden;
   width: 100vw;
-}
+} */
 
 
 .mainPage {
   position: relative;
-  width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .backgroundLines {
@@ -87,7 +93,7 @@ body {
 }
 
 .henryBoxFooter {
-  margin-top: 0;
+  margin-bottom: 2vh;
   width: 200px;
   height: 54px;
   border: 1px solid var(--white);
@@ -99,6 +105,11 @@ body {
 }
 
 
+.henryBoxFooter p {
+  font-family: 'Forum';
+  font-size: 1.7rem;
+}
+
 
 .henryBox p {
   font-family: 'Forum';
@@ -107,6 +118,7 @@ body {
 
 .main {
   padding-top: 5vh;
+  width: 100vw;
 }
 
 .main h1 {
@@ -151,7 +163,7 @@ body {
 .description p {
   margin-top: 2vh;
   line-height: 1.5;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   max-width: 45vw;
   font-family: 'Poppins';
 
@@ -193,6 +205,11 @@ body {
   font-weight: 700;
   letter-spacing: .05rem;
 
+}
+
+.projectsHolder {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .projects {
@@ -470,6 +487,7 @@ body {
 }
 
 .henryBoxWhiteFooter {
+  margin-bottom: 2vh;
   font-family: 'Forum';
   width: 200px;
   height: 54px;
@@ -480,6 +498,11 @@ body {
   letter-spacing: .1rem;
   color: var(--black);
   cursor: pointer;
+}
+
+.henryBoxWhiteFooter p {
+  font-family: 'Forum';
+  font-size: 1.7rem;
 }
 
 .henryBoxWhite div {
@@ -498,6 +521,7 @@ body {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   height: fit-content;
+  min-height: 1000px;
   width: 100%;
   z-index: -1;
   background-color: var(--white);
@@ -525,8 +549,14 @@ body {
   padding: 5vh 2.5vw;
   margin-left: 15vw;
   width: 20vw;
+  height: 45vh;
+  min-height: 250px;
+  min-width: 250px;
   background-color: var(--white);
   border: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projectTools h3 {
@@ -535,8 +565,6 @@ body {
 }
 
 .projectTools h4 {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
   font-size: 1.2rem;
   font-family: sans-serif;
   width: 10vw;
@@ -645,26 +673,6 @@ body {
   background-color: var(--offwhite);
 
 }
-
-.photoBackgroundLines {
-  margin-top: 0;
-  position: absolute;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  height: 300vh;
-  width: 100%;
-}
-
-.photoBackgroundLines div {
-  border-right: 1px solid rgb(179, 178, 178, .15);
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-
-}
-
-
-
 
 .about {
   padding-top: 35vh;
@@ -827,12 +835,17 @@ body {
   padding: 0 0;
 }
 
+.photosPage {
+  width: 100%;
+  overflow: hidden;
+}
+
 
 .menuHeader {
   margin: 0 0;
   position: absolute;
   right: 5vw;
-  top: 1.8vh;
+  top: 4vh;
   color: var(--black);
   display: inline-block;
   width: 150px;
@@ -858,13 +871,84 @@ body {
 }
 .menu {
   position: fixed;
-  cursor: pointer;
-  top: 2.5vh;
   right: 5vw;
   width: 2.5vw;
   height: 5vh;
   z-index: 5;
+
 }
+
+.x {
+  cursor: pointer;
+}
+
+
+.whiteMenuLines {
+  top: 4vh;
+  position: fixed;
+  width: 40px;
+  height: 15px;
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  border-radius: 1px;
+  transition: ease-in-out .1s;
+  cursor: pointer;
+
+}
+
+.blackMenuLines {
+  top: 4vh;
+  position: fixed;
+  width: 40px;
+  height: 15px;
+  border-radius: 1px;
+  border-top: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  transition: ease-in-out .1s;
+  cursor: pointer;
+
+
+}
+
+.blackMenuLines:hover {
+  border-top: 2px solid var(--darkGreen);
+  border-bottom: 2px solid var(--darkGreen);
+  transition: ease-in-out .1s;
+}
+
+.whiteMenuLines:hover {
+  border-top: 2px solid var(--darkGreen);
+  border-bottom: 2px solid var(--darkGreen);
+  transition: ease-in-out .1s;
+}
+
+
+
+
+
+
+
+
+/* .whiteMenu  {
+  width: 100%;
+  height: 2px;
+  border: 1px solid var(--white);
+  border-radius: 2px;
+}
+
+
+
+.blackMenu  {
+  width: 100%;
+  height: 2px;
+  border: 1px solid var(--black);
+  border-radius: 1px;
+
+} */
+
+
+
+
 
 
 
@@ -916,12 +1000,17 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   z-index: 3;
+  overflow: hidden;
 }
 
-/* .menuPhoto {
+.menuPhoto {
   position: relative;
   z-index: -1;
-} */
+  animation-name: appear;
+  animation-duration: 1s;
+  margin-right: 5vw;
+}
+
 
 
 
@@ -1053,8 +1142,15 @@ body {
 .aboutPhoto {
   margin-top: 9vh;
   position: relative;
-  width: 100%;
+  width: 30vw;
   height: 60vh;
+  overflow: hidden;
+  margin-left: 10vw;
+}
+
+.aboutPhoto img {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -1073,7 +1169,7 @@ body {
 }
 
 .aboutText p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -1141,19 +1237,19 @@ body {
   font-size: 1.8rem;
 }
 
-.contactText a {
+.contactEmail a {
   font-size: 1.2rem;
   margin-top: 4vh;
   color: var(--black);
   font-family: 'Poppins';
   font-weight: 700;
   transition: ease-in-out .3s;
+  cursor: pointer;
 
 }
-.contactText a:hover {
+.contactEmail a:hover {
   color: var(--darkGreen);
   transition: ease-in-out .3s;
-
 }
 
 
@@ -1166,6 +1262,7 @@ body {
 
 .bigSocials a {
   transition: opacity ease .3s;
+  margin-right: 5px;
 }
 
 .form {

@@ -35,11 +35,12 @@ const About = () => {
 
         <div class="aboutPage">
 
+
           <div class="aboutPhoto">
               <Image
                 src="/henry.jpg"
-                layout="fill"
-                objectFit="contain"
+                width={668}
+                height={774}
               />
           </div>
 

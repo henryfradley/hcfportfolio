@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Fade from 'react-reveal/Fade';
+import { CgClose } from "react-icons/cg";
 
 
 const Menu = (props) => {
@@ -58,24 +59,16 @@ const Menu = (props) => {
       <div>
       <div class="menu">
         {!props.black ? <p class="whiteMenuHeader">{props.name}</p> : <p class="menuHeader">{props.name}</p>}
+          {!props.black ?
+          <div class="whiteMenuLines" onClick={showMenu}>
 
-        {!props.black ?
-          <Image
-            onClick={showMenu}
-            src="/whiteMenu.png"
-            alt="menu"
-            layout="fill"
-            objectFit="contain"
-          /> :
-          <Image
-            onClick={showMenu}
-            src="/blackMenu.png"
-            alt="menu"
-            layout="fill"
-            objectFit="contain"
-          />}
+          </div>
+           :
+           <div class="blackMenuLines" onClick={showMenu}>
+            </div>
+          }
         </div>
-      </div> : <p onClick={hideMenu} class="menu">X</p>}
+      </div> : <p onClick={hideMenu} class="menu"><CgClose color="#F8FCF0" size="30px" class="x" /></p>}
 
       {visible ?
       <div>
@@ -93,8 +86,9 @@ const Menu = (props) => {
           </ul>
         </div>
 
-        <Fade distance="5vh" delay={1200} bottom>
-          <div class="menuPhoto">
+        <Fade distance="5vh" delay={1000} bottom>
+          <div>
+          <div class="menuPhoto" key={`${images[index]}.jpg`}>
           <Image
             loader={myLoader}
             src={`${images[index]}.jpg`}
@@ -103,6 +97,9 @@ const Menu = (props) => {
             height="500"
           />
           </div>
+
+          </div>
+
           </Fade>
 
       </div>
