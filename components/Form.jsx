@@ -56,36 +56,29 @@ const Form = (props) => {
 
     setSubmit(true);
 
-
   };
 
   const toggleHover = () => {
     setHover(!hover);
   };
 
-
-
-
   return (
     <div>
       {!submitted ?
       <form class="form" onSubmit={handleSubmit}>
-
         <input required onChange={handleNameChange} value={message.name} name="name" type="text" placeholder="Your Name"></input>
         <input required onChange={handleEmailChange} value={message.email} type="email" name="email" type="email" placeholder="Email"></input>
         <input required onChange={handleTextChange} value={message.text} name="message" placeholder="Type your message here..." class="big"></input>
         <input class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover} onMouseLeave={toggleHover} type="submit" value="SEND"></input>
       </form>
-      : <div class="thanks">
-        <div></div>
-        <h1>
-          Thanks for messaging! Talk to you soon
-        </h1>
+      :
+      <div class="thanks">
 
-
+        <div class="thanksBox">
+          <h1>Thanks for the message! I will be in touch with you soon.</h1>
         </div>
-      }
 
+      </div>}
     </div>
 
   );

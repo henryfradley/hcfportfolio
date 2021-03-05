@@ -2,9 +2,6 @@ import { useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://d13gv6jsteq2nf.cloudfront.net/${src}?w=${width}&q=${quality || 75}`
-}
 
 
 
@@ -17,6 +14,12 @@ const Carousel = (props) => {
   const [ hover, setHover ] = useState(true);
   const [ left, moveLeft ] = useState(true);
   const [ right, moveRight ] = useState(true);
+
+  const myLoader = ({ src, width, quality }) => {
+    return `https://d13gv6jsteq2nf.cloudfront.net/${src}?w=${width}&q=${quality || 75}`
+  }
+
+
   const toggleMoveRight = () => {
     moveRight(!right);
   };
@@ -33,6 +36,7 @@ const Carousel = (props) => {
   const prevImage = () => {
     {index > 0 ? setIndex(index - 1) : setIndex(length)}
   }
+
   const dots = images.map(dot => {
     if (images.indexOf(dot) === index) {
       return <div class="solidwhiteDot" key={images.indexOf(dot)}></div>
@@ -40,7 +44,6 @@ const Carousel = (props) => {
     return <div class="whitedot" key={images.indexOf(dot)}></div>
   });
 
-<Link href={`/projects/${props.data.next}`}></Link>
 
 
 
@@ -49,63 +52,57 @@ const Carousel = (props) => {
       <div class="carouselImage" key={images[index]}>
         <Image
           loader={myLoader}
-          src={`${images[index]}.jpg`}
-          alt="pile"
+          src={`${images[index]}.png`}
+          alt="proj"
           layout="fill"
           objectFit="contain"
         />
-
       </div>
 
-      {/* <h3>Feature Description</h3> */}
+      {dots.length > 1 ?
       <div class="projArrows">
-          <div onClick={prevImage} class="arrow">
+        <div onClick={prevImage} class="arrow">
           <Image
-                src="/whiteLeftArrow.png"
-                alt="leftArrow"
-                layout="fill"
-                objectFit="contain"
-            />
-            </div>
-          <div class="dots">{dots}</div>
-          <div onClick={nextImage} class="arrow">
-            <Image
-                src="/whiteRightArrow.png"
-                alt="rightArrow"
-                layout="fill"
-                objectFit="contain"
-            />
-          </div>
-      </div>
-      {/* <p>{props.data.details}</p> */}
-      <div class="nextProject">
-      <Link href={`/projects/${props.data.prev}`}><div class="prev">
+            src="/whiteLeftArrow.png"
+            alt="leftArrow"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <div class="dots">{dots}</div>
+        <div onClick={nextImage} class="arrow">
+          <Image
+            src="/whiteRightArrow.png"
+            alt="rightArrow"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+      </div> : null}
 
-      <div class={left ? "viewLeft" : "viewLeftHover"} onMouseEnter={toggleMoveLeft}
-      onMouseLeave={toggleMoveLeft}>
+      <div class="nextProject">
+        <Link href={`/projects/${props.data.prev}`}>
+          <div class="prev">
+            <div class={left ? "viewLeft" : "viewLeftHover"} onMouseEnter={toggleMoveLeft} onMouseLeave={toggleMoveLeft}>
               <Image
               src="/prevProject.png"
               layout="fill"
               objectFit="contain"
               />
-              </div>
-        </div>
-      </Link>
-      <Link href={`/projects/${props.data.next}`}>
-      <div class="next">
-      <div class={right ? "viewRight" : "viewRightHover"} onMouseEnter={toggleMoveRight}
-      onMouseLeave={toggleMoveRight}>
+            </div>
+          </div>
+        </Link>
+        <Link href={`/projects/${props.data.next}`}>
+          <div class="next">
+            <div class={right ? "viewRight" : "viewRightHover"} onMouseEnter={toggleMoveRight} onMouseLeave={toggleMoveRight}>
               <Image
               src="/nextProject.png"
               layout="fill"
               objectFit="contain"
               />
-              </div>
-        </div>
-
-
-      </Link>
-
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

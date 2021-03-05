@@ -9,10 +9,9 @@ const myLoader = ({ src, width, quality }) => {
 
 
 const PhotoCarousel = (props) => {
-
+  const [ index, setIndex] = useState(0);
   const images = props.data.images;
   const length = images.length - 1;
-  const [ index, setIndex] = useState(0);
 
   const dots = images.map(dot => {
     if (images.indexOf(dot) === index) {
@@ -29,24 +28,21 @@ const PhotoCarousel = (props) => {
     {index > 0 ? setIndex(index - 1) : setIndex(length)}
   }
 
-
-
   return (
     <div class="photoProj">
-
       <div class="photoHead">
-      <div class="bigImage">
-        <div class="slideImage" key={images[index]}>
-        <Image
-        loader={myLoader}
-        src={`${images[index]}.jpg`}
-        alt="pile"
-        layout="fill"
-        objectFit="cover"
-        />
-        </div>
+        <div class="bigImage">
+          <div class="slideImage" key={images[index]}>
+            <Image
+            loader={myLoader}
+            src={`${images[index]}.jpg`}
+            alt="pile"
+            layout="fill"
+            objectFit="cover"
+            />
+          </div>
 
-      </div>
+        </div>
       <div class="projDescription" style={{backgroundColor: props.data.color}}>
         <div class="bgLine">
           <div></div>
@@ -76,9 +72,7 @@ const PhotoCarousel = (props) => {
           </div>
         </div>
       </div>
-    <div>
-        </div>
-      </div>
+    </div>
 
     </div>
 

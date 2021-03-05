@@ -7,9 +7,6 @@ import Footer from '../components/Footer.jsx';
 
 const Home = () => {
 
-
-
-
   return (
     <div class="mainPage">
       <Menu />
@@ -17,13 +14,11 @@ const Home = () => {
         <div></div>
         <div></div>
         <div></div>
-
       </div>
       <Main />
       <Projects />
       <Footer color="#20211F"/>
     </div>
-
   );
 };
 

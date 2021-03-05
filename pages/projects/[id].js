@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import projects from '../../data/projectDetails.js';
 import Carousel from '../../components/Carousel.jsx';
 import Footer from '../../components/Footer.jsx';
@@ -20,7 +21,7 @@ const Project = () => {
 
 
   return (
-    <div class="projectsHolder">
+    <div class="projectsHolder" key={id}>
       <Menu black={true} name={"PROJECTS"}/>
       <div class="whiteBackgroundLines">
         <div></div>
@@ -28,24 +29,24 @@ const Project = () => {
         <div></div>
         <div></div>
       </div>
-      <div class="projectPage">
-      <div class="henryBoxWhite">
-        <div>henry fradley.</div>
-      </div>
+    <div class="projectPage">
+      <Link href="../">
+        <div class="henryBoxWhite">
+          <div>henry fradley.</div>
+        </div>
+      </Link>
+
       <div class="projectInfo">
         <div>
-        <Fade distance="5vh" delay={400} bottom>
-          <h1>{data.name}</h1>
-        </Fade>
-        <Fade distance="5vh" delay={600} bottom>
-          <h3>Overview</h3>
-        </Fade>
-
-        <Fade distance="5vh" delay={600} bottom>
-          <p>{data.details}</p>
-        </Fade>
-
-
+          <Fade distance="5vh" delay={400} bottom>
+            <h1>{data.name}</h1>
+          </Fade>
+          <Fade distance="5vh" delay={600} bottom>
+            <h3>Overview</h3>
+          </Fade>
+          <Fade distance="5vh" delay={600} bottom>
+            <p>{data.details}</p>
+          </Fade>
         </div>
 
 
@@ -54,10 +55,7 @@ const Project = () => {
           <h4>{data.tech}</h4>
           <div class="liveLinks">
             <a target="_blank" href={data.git}>GITHUB</a>
-            {data.live ?
-            <a target="_blank" href={data.live}>LIVE SITE</a> :
-            null
-            }
+            {data.live ? <a target="_blank" href={data.live}>LIVE SITE</a> : null}
           </div>
 
         </div>
@@ -67,10 +65,7 @@ const Project = () => {
       </div>
       <Carousel data={data} />
       <Footer color="#20211F"/>
-
     </div>
-
-
   );
 };
 
