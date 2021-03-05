@@ -10,7 +10,7 @@ const About = () => {
   const [ hover, setHover ] = useState(true);
 
   useEffect(() => {
-    document.body.style.overflow = 'visible'
+    document.body.style.overflow = 'visible';
   });
 
   const toggleHover = () => {
@@ -19,8 +19,8 @@ const About = () => {
 
 
   return (
-    <div>
-      <div class="whiteBackgroundLines">
+    <div class="aboutBackground">
+      <div class="aboutBackgroundLines">
         <div></div>
         <div></div>
         <div></div>
@@ -51,17 +51,19 @@ const About = () => {
               <h3>I'm Henry, a software engineer based in Honolulu, HI.</h3>
             </Fade>
             <Fade distance="5vh" delay={700} bottom>
-              <p>I love software engineering because of how accessible and open-ended the possibilities are to build and create with just a computer! My eye for detail and style plays into my necessity for clean code and focusing on the user experience and appearance of my projects to ensure they are visually striking and easy to use.</p>
+              <p>Thanks for checking out my website! I love software engineering because of how accessible and open-ended the possibilities are to build and create. I have a great eye for detail and style and enjoy focusing on the UX and appearance of my projects. My expertise is primarily in React, Next.js, and Node.js. </p>
             </Fade>
             <Fade distance="5vh" delay={900} bottom>
-              <p>I'm currently looking for remote oppurtunities in software engineering! If you would like to reach out or just say hi send me a message!</p>
+              <p>I'm currently looking for remote opportunities in software engineering! If you would like to reach out or just say hi send me a message!</p>
             </Fade>
-
+            <div class="buttonCenter">
             <Fade distance="5vh" delay={1100} bottom>
               <Link href="../contact">
                 <div class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>GET IN TOUCH</div>
               </Link>
             </Fade>
+            </div>
+
           </div>
         </div>
       </div>

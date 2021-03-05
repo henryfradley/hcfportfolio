@@ -254,6 +254,7 @@ p {
 
 .projectRight {
   padding-top: 10vh;
+  padding-bottom: 5vh;
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -475,7 +476,7 @@ p {
   font-family: 'Forum';
   width: 200px;
   height: 54px;
-  border: 1px solid var(--black);;
+  border: 1px solid var(--black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,17 +520,60 @@ p {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   height: fit-content;
-  min-height: 1000px;
+  min-height: 800px;
   width: 100%;
   z-index: -1;
   background-color: var(--white);
 }
 
+.aboutBackgroundLines {
+  margin-top: 0;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: fit-content;
+  min-height: 800px;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--white);
+
+}
+
+.aboutBackgroundLines div {
+  border-right: 1px solid rgb(179, 178, 178, .15);
+  height: fit-content;
+  min-height: 800px;
+  width: 100%;
+}
+
+
+.contactBackgroundLines {
+  margin-top: 0;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: fit-content;
+  min-height: 800px;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--white);
+}
+
+.contactBackgroundLines div {
+  border-right: 1px solid rgb(179, 178, 178, .15);
+  height: fit-content;
+  min-height: 800px;
+  width: 100%;
+}
+
+
+
+
 
 .whiteBackgroundLines div {
   border-right: 1px solid rgb(179, 178, 178, .15);
   height: fit-content;
-  min-height: 100vh;
+  min-height: 800px;
   width: 100%;
 }
 
@@ -740,7 +784,7 @@ p {
   margin-top: 2vh;
   color: var(--black);
   font-size: 1.2rem;
-  font-family: sans-serif;
+  font-family: 'Poppins';
   font-weight: 600;
 }
 
@@ -963,6 +1007,7 @@ p {
   animation-name: appear;
   animation-duration: 1s;
   margin-right: 5vw;
+  margin-bottom: 5vh;
 }
 
 .closed {
@@ -1044,7 +1089,9 @@ p {
 }
 
 
-
+.top {
+  z-index: 9;
+}
 
 
 
@@ -1069,6 +1116,9 @@ p {
   font-size: 1.7rem;
 }
 
+.aboutBackground {
+  min-height: 800px;
+}
 .aboutHolder {
   padding-top: 5vh;
 }
@@ -1255,6 +1305,7 @@ input {
   border-bottom: 1px solid var(--black);
   outline: none;
   height: 5vh;
+  min-height: 30px;
   margin-bottom: 5vh;
   margin-left: 5vw;
   width: 19.7vw;
@@ -1483,3 +1534,468 @@ input {
   font-size: 1.8rem;
 }
 
+.flip {
+  padding-top: 2vh;
+}
+
+.flip p {
+  padding-top: 2vh;
+  color: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+  .photoHead {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bigImage  {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .about {
+    padding: 0 0;
+  }
+
+  .about p {
+    padding: 5vh 0;
+    font-size: 1.4rem;
+  }
+
+  .projDescription {
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projDescription {
+    padding: 5vh 0;
+    text-align: center;
+  }
+
+  .projDescription p {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .flip {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .flip p {
+    font-size: 1.1rem;
+  }
+
+  .imageArrows {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slideImage {
+    height: 80%;
+  }
+  .menuPhoto {
+    opacity: 0;
+  }
+  .menuPage {
+    grid-template-columns: 100%;
+  }
+
+
+  .pages {
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  .pages li {
+    margin: 0 0;
+    width: 100%;
+  }
+
+  .link {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .selected {
+    font-size: 3.2rem;
+    text-align: center;
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .menu  {
+    right: 10vw;
+  }
+
+  .menuPhoto {
+    opacity: 0;
+  }
+  .bigImage  {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .selected {
+    font-size: 2rem;
+    text-align: center;
+
+  }
+
+
+
+
+
+
+  .main h1 {
+    margin-left: 1vw;
+    margin-top: 10vh;
+    font-size: 5rem;
+  }
+
+  .main h2 {
+    margin-left: 1vw;
+    font-size: 2.2rem;
+    width: 80%;
+    margin-bottom: 15vh;
+  }
+
+  .spinHolder {
+    margin: 0 0;
+    position: absolute;
+  }
+
+  .spinHolder img {
+   opacity: 0;
+  }
+
+  .whatImInto {
+    margin-left: 1vw;
+    grid-template-columns: 100%;
+    margin-top: 8vh;
+  }
+
+  .description {
+    width: 80vw;
+  }
+
+  .description p {
+    max-width: 80vw;
+  }
+
+  .tools {
+    margin-top: 5vh;
+    margin-left: 5vw;
+
+  }
+
+  .tools p {
+    width: 90%;
+  }
+
+  .projects {
+    margin-top: 10vh;
+    min-height: 300px;
+  }
+
+
+  .projects h1 {
+    font-size: 5rem;
+    margin: 0 0;
+    margin-left: 5vw;
+    padding-bottom: 0;
+  }
+
+  .image2 {
+    margin-top: 20vh;
+  }
+
+  .projectList {
+    margin: 10vh 0;
+    padding: 0 0;
+  }
+
+  .project {
+    margin-top: 10vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+
+  }
+
+  .projectDescription {
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectDescription h3 {
+    font-size: 3rem;
+  }
+
+  .projectDescription p {
+    width: 60%;
+    text-align: center;
+  }
+
+
+  .send {
+    text-align: center;
+  }
+
+  .highlightImage {
+    width: 80%;
+    height: 20vh;
+  }
+
+  .highlightImageRight {
+    width: 80%;
+    height: 20vh;
+    margin-left: 10vw;
+  }
+
+  .projectRight {
+    margin-top: 10vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+  }
+
+
+
+  .contact {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2vh 3vw;
+  }
+
+  .contactHolder {
+    max-height: 1000px;
+    overflow-y: hidden;
+  }
+
+  .contactText {
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .contactText p {
+    margin-left: 5vw;
+    margin-top: 10vh;
+    font-size: 1.3rem;
+    width: 75%;
+  }
+
+
+
+  .form {
+    margin: 4vh 0;
+  }
+
+  input {
+    width: 50vw;
+  }
+
+  .bigSocials {
+    margin: 0 5vw;
+    width: 45vw;
+  }
+
+  .big {
+    width: 75vw;
+  }
+
+  .thanks {
+    top: 60%;
+    width: 100vw;
+    height: 60vh;
+    animation-name: slideUp;
+    margin: 0 0;
+  }
+
+  .contactEmail {
+    margin-bottom: 4vh;
+  }
+  .contactEmail a {
+    font-size: .9rem;
+    margin-left: 5vw;
+  }
+
+  .whiteBackgroundLines div {
+    min-height: 1500px;
+  }
+
+  .contactBackgroundLines div {
+    min-height: 1000px;
+  }
+
+  .aboutBackgroundLines div {
+    min-height: 1250px;
+  }
+
+  .aboutPage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutPhoto {
+    margin-top: 5vh;
+    height: 45vh;
+    width: 70vw;
+    margin-left: 15vw;
+  }
+
+  .aboutText {
+    margin-top: 5vh;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .aboutText h3 {
+    text-align: center;
+    padding-bottom: 5vh;
+  }
+
+  .aboutText p {
+    margin-top: 2.5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .buttonCenter {
+    margin-top: 2.5vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .projectInfo h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0 0;
+  }
+
+  .projectInfo h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5vh;
+    margin: 0 auto;
+    width: fit-content;
+
+  }
+
+
+  .projectInfo p {
+    padding-top: 5vh;
+    width: 80%;
+    text-align: center;
+    margin: 0 10%;
+  }
+
+  .projectTools {
+    margin-top: 5vh;
+    width: 50vw;
+    height: 35vh;
+    min-height: 150px;
+    min-width: 150px;
+    margin-left: 25vw;
+    padding: 0 3vw;
+
+  }
+
+  .projectTools h4 {
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+
+  .henryBoxWhite {
+    width: 150px;
+    height: 40px;
+  }
+
+  .henryBoxWhite div {
+    font-size: 1.3rem;
+  }
+
+
+  .hcfLogo {
+    width: 150px;
+    height: 40px;
+
+  }
+
+  .hcfLogo p {
+    font-size: 1.3rem;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1800px) {
+
+.aboutText {
+  margin-top: 12vh;
+  height: 50vh;
+}
+
+.aboutText h3 {
+  font-size: 2.8rem;
+}
+
+.aboutText p {
+  font-size: 1.4rem;
+}
+
+.bigSocials {
+  width: 10vw;
+}
+
+.projectInfo h1 {
+  font-size: 3.6rem;
+}
+
+.projectInfo h3 {
+  font-size: 2.4rem;
+}
+
+.projectInfo p {
+  font-size: 1.4rem;
+}
+
+.projectTools {
+  width: 15vw;
+  height: 20vw;
+
+}
+
+}

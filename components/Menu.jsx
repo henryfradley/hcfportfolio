@@ -9,6 +9,7 @@ const Menu = (props) => {
 
   const router = useRouter();
   const path = router.asPath;
+  const stringPath = path.toString();
 
   const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(false);
@@ -49,7 +50,7 @@ const Menu = (props) => {
   const linkList = [['HOME', '../', 400], ['ABOUT', '/about', 600], ['PROJECTS', '/projects/micaela-designs', 800], ['PHOTOGRAPHY', '/photography', 1000], ['CONTACT', '/contact', 1200]];
 
   const links = linkList.map(link => {
-    return <div onMouseDown={() => {
+    return <div class="top" onMouseDown={() => {
       checkLink(link[1])
     }}><Link href={link[1]}><li class={setClassName(link)} style={{animationDelay: `${link[2]}ms`}} onMouseEnter={() => {setIndex(linkList.indexOf(link))}}>{link[0]}</li></Link></div>
 });

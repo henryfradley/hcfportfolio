@@ -50,8 +50,8 @@ const PhotoCarousel = (props) => {
 
         <h1>{props.data.name}</h1>
         <h3>{props.data.date}</h3>
+        <div class="flip">
         <p>{props.data.description}</p>
-
         <div class="imageArrows">
           <div onClick={prevImage} class="arrow">
             <Image
@@ -60,7 +60,7 @@ const PhotoCarousel = (props) => {
               width={43}
               height={25}
             />
-        </div>
+          </div>
           <div class="dots">{dots}</div>
           <div onClick={nextImage} class="arrow">
             <Image
@@ -71,7 +71,14 @@ const PhotoCarousel = (props) => {
             />
           </div>
         </div>
-      </div>
+
+
+
+        </div>
+
+
+
+        </div>
     </div>
 
     </div>

@@ -8,13 +8,11 @@ const Main = () => {
 
   return (
     <div class="main">
-
       <div class="henryBox"><p>henry fradley.</p></div>
 
       <Fade distance="5vh" delay={500} bottom>
         <h1>Hi, I’m Henry.</h1>
       </Fade>
-
       <Fade distance="4vh" delay={800} bottom>
         <h2>I build things for the web.</h2>
       </Fade>
@@ -31,38 +29,29 @@ const Main = () => {
       </div>
       <div class="whatImInto">
         <div>
-
-        <div class="interests">
-        <Fade distance="5vh" delay={400} bottom>
-        <h3>What I’m into</h3>
-        </Fade>
-
-            <div class="description">
-            <Fade distance="5vh" delay={800} bottom>
-              <p>
-              I am a Full Stack Software Engineer located in sunny Honolulu, HI. I have a great eye for detail and style and love focusing on the UX and responsiveness of my projects. My expertise is primarily in React.js, Node.js, and Next.js but I love building and creating with all types of technologies!
-              </p>
+          <div class="interests">
+            <Fade distance="5vh" delay={400} bottom>
+              <h3>What I’m into</h3>
             </Fade>
-              </div>
-
-
+            <div class="description">
+              <Fade distance="5vh" delay={800} bottom>
+                <p>I am a Full Stack Software Engineer located in sunny Honolulu, HI. I am an artist at heart and love focusing on the UX and responsiveness of my projects. Take a look at some of my recent work below!</p>
+              </Fade>
+            </div>
           </div>
         </div>
         <div class="tools">
           <div class="myTools">
-          <Fade distance="5vh" delay={400} bottom>
-            <h3>My tools</h3>
-          </Fade>
-
+            <Fade distance="5vh" delay={400} bottom>
+              <h3>My tools</h3>
+            </Fade>
           </div>
           <Fade distance="5vh" delay={800} bottom>
             <p>React.js, Next.js, Javascript, SASS, MySQL, Postgres, HTML, CSS, AWS, Express, Node.js</p>
           </Fade>
         </div>
-
       </div>
     </div>
-
   );
 };
 

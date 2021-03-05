@@ -38,18 +38,17 @@ const Project = (props) => {
           <Fade distance="5vh" delay={700} bottom>
             <p>{props.data.tech}</p>
           </Fade>
-
-
         <div>
 
-          <Fade distance="5vh" delay={900} bottom>
-            <div>
+            <div class="buttonHolder">
+            <Fade distance="5vh" delay={900} bottom>
               <Link href={`/projects/${props.data.link}`}>
                 <div class={hover ? "send" : "sendFill"} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>VIEW PROJECT</div>
               </Link>
+            </Fade>
 
             </div>
-          </Fade>
+
 
         </div>
 

@@ -13,7 +13,7 @@ const Contact = () => {
 
   return (
     <div class="contactHolder">
-      <div class="whiteBackgroundLines">
+      <div class="contactBackgroundLines">
         <div></div>
         <div></div>
         <div></div>

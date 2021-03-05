@@ -25,7 +25,7 @@ const Project = () => {
 
 
   useEffect(() => {
-    document.body.style.overflow = 'visible'
+    document.body.style.overflow = 'visible';
   });
 
   const router = useRouter()
