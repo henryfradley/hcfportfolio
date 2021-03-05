@@ -28,14 +28,22 @@ const Project = () => {
     document.body.style.overflow = 'visible';
   });
 
-  const router = useRouter()
-  const { id } = router.query
+  const router = useRouter();
+  const { id } = router.query;
   const data = projects[id];
   const stringId = id;
-  let caps = stringId.toString();
-  caps = caps.toUpperCase();
-  const words = caps.split('-');
-  const name = words[0] + ' ' + words[1];
+
+  if (stringId) {
+    let caps = stringId.toString().toUpperCase()
+    const words = caps.split('-');
+    const name = words[0] + ' ' + words[1];
+  }
+
+  if (!name) {
+    const name = 'MENU'
+
+  }
+
 
 
 
