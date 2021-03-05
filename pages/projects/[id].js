@@ -22,6 +22,8 @@ const Project = () => {
     setSecondaryHover(!secondaryHover);
   };
 
+  const projNames = ['micaela-designs', 'swell-tracker', 'relax-camping']
+
 
 
   useEffect(() => {
@@ -30,18 +32,26 @@ const Project = () => {
 
   const router = useRouter();
   const { id } = router.query;
-  const data = projects[id];
+  let data;
+  if (projNames.indexOf(id) > -1) {
+    data = projects[id];
+  } else {
+    data = projects['micaela-designs']
+  }
+
+
+
   const stringId = id;
+  let name;
 
   if (stringId) {
     let caps = stringId.toString().toUpperCase()
     const words = caps.split('-');
-    const name = words[0] + ' ' + words[1];
+    name = words[0] + ' ' + words[1];
   }
 
   if (!name) {
-    const name = 'MENU'
-
+    name = 'MENU'
   }
 
 
