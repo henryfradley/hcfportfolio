@@ -14,7 +14,6 @@ const Form = (props) => {
   });
 
   const [submitted, setSubmit] = useState(false);
-
   const [ hover, setHover ] = useState(true);
 
 
@@ -42,17 +41,31 @@ const Form = (props) => {
     }));
   };
 
-  const handleSubmit = (event) => {
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   axios({
+  //     method: 'POST',
+  //     url: '/send',
+  //     data: {
+  //       name: message.name,
+  //       email: message.email,
+  //       message: message.text,
+  //     }
+  //   })
+
+  //   setSubmit(true);
+
+  // };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    axios({
+    const res = await fetch('/api/send', {
       method: 'POST',
-      url: '/send',
-      data: {
-        name: message.name,
-        email: message.email,
-        message: message.text,
-      }
-    })
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(message)
+    });
 
     setSubmit(true);
 

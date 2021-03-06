@@ -4,7 +4,7 @@
   "description": "Henry Fradleys personal portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -19,16 +19,16 @@
   },
   "homepage": "https://github.com/henryfradley/hcfportfolio#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "next": "^10.0.7",
     "nodemailer": "^6.5.0",
     "react": "^17.0.1",
-    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
-    "react-reveal": "^1.2.2",
-    "react-scroll-parallax": "^2.3.5"
+    "react-reveal": "^1.2.2"
   }
 }
