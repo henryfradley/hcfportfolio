@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.jsx';
 import Menu from '../../components/Menu.jsx';
 import { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
+import Head from 'next/head';
 
 
 
@@ -60,6 +61,10 @@ const Project = () => {
 
   return (
     <div class="projectsHolder" key={id}>
+      <Head>
+        <title>{data.name}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Menu black={true} name={name}/>
       <div class="whiteBackgroundLines">
         <div></div>

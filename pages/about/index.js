@@ -4,6 +4,7 @@ import Menu from '../../components/Menu.jsx';
 import Footer from '../../components/Footer.jsx';
 import { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
+import Head from 'next/head';
 
 const About = () => {
 
@@ -20,6 +21,10 @@ const About = () => {
 
   return (
     <div class="aboutBackground">
+      <Head>
+       <title>henry fradley</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div class="aboutBackgroundLines">
         <div></div>
         <div></div>

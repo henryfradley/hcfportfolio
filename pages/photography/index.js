@@ -6,6 +6,7 @@ import Menu from '../../components/Menu.jsx';
 import Footer from '../../components/Footer.jsx';
 import { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import Head from 'next/head'
 
 
 
@@ -29,6 +30,10 @@ const Photos = () => {
 
   return (
     <div class="photosPage">
+      <Head>
+        <title>photography</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Menu black="true" name="PHOTOGRAPHY"/>
       <div>
         <Link href="../"><div class="hcfLogo"><p>henry fradley.</p></div></Link>
@@ -54,12 +59,10 @@ const Photos = () => {
       {projects}
 
       <Footer white={true}/>
+
       </div>
     </div>
-
-
   );
-
 };
 
 export default Photos;
