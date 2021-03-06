@@ -27,6 +27,7 @@ const Main = () => {
           layout="fixed"
         />
       </div>
+
       <div class="whatImInto">
         <div>
           <div class="interests">
