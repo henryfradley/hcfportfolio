@@ -719,7 +719,7 @@ p {
 .photoHead {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: var(--offwhite);
+  background-color: var(--white);
 
 }
 
