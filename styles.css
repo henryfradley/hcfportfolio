@@ -77,8 +77,10 @@ p {
 .henryBox {
   margin-top: 0;
   margin-left: 5vw;
-  width: 200px;
-  height: 54px;
+  /* width: 12.5rem; */
+  padding: .5rem .5rem;
+  width: fit-content;
+  height: 3.375rem;
   border: 1px solid var(--white);
   display: flex;
   justify-content: center;
@@ -89,8 +91,9 @@ p {
 
 .henryBoxFooter {
   margin-bottom: 2vh;
-  width: 200px;
-  height: 54px;
+  padding: .5rem .5rem;
+  width: fit-content;
+  height: 3.375rem;
   border: 1px solid var(--white);
   display: flex;
   justify-content: center;
@@ -474,8 +477,9 @@ p {
 .henryBoxWhite {
   margin-left: 5vw;
   font-family: 'Forum';
-  width: 200px;
-  height: 54px;
+  padding: .5rem .5rem;
+  width: fit-content;
+  height: 3.375rem;
   border: 1px solid var(--black);
   display: flex;
   justify-content: center;
@@ -488,8 +492,9 @@ p {
 .henryBoxWhiteFooter {
   margin-bottom: 2vh;
   font-family: 'Forum';
-  width: 200px;
-  height: 54px;
+  padding: .5rem .5rem;
+  width: fit-content;
+  height: 3.375rem;
   border: 1px solid var(--black);;
   display: flex;
   justify-content: center;
@@ -752,8 +757,9 @@ p {
   position: absolute;
   margin-left: 5vw;
   margin-top: 5vh;
-  width: 200px;
-  height: 54px;
+  padding: .5rem .5rem;
+  width: fit-content;
+  height: 3.375rem;
   border: 1px solid white;
   display: flex;
   justify-content: center;
@@ -1100,8 +1106,9 @@ p {
   animation: slideIn ease .5s;
   margin-top: 5vh;
   margin-left: 5vw;
-  width: 200px;
-  height: 54px;
+  padding: .5rem .5rem;
+  width: fit-content;
+  height: 3.375rem;
   border: 1px solid white;
   display: flex;
   justify-content: center;
@@ -1563,6 +1570,14 @@ input {
     font-size: 1.4rem;
   }
 
+  .interests  {
+    padding-top: 10vh;
+  }
+
+  .main h2  {
+    padding-top: 3vh;
+  }
+
   .projDescription {
     padding: 0 0;
     display: flex;
@@ -1938,7 +1953,7 @@ input {
 
 
   .henryBoxWhite {
-    width: 150px;
+    width: fit-content;
     height: 40px;
   }
 
@@ -1948,7 +1963,7 @@ input {
 
 
   .hcfLogo {
-    width: 150px;
+    width: fit-content;
     height: 40px;
 
   }
