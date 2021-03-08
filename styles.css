@@ -40,8 +40,17 @@ h3 {
 
 a {
   text-decoration: none;
-  color: var(--white);
-  margin: 0 0;
+  color: var(--black);
+  margin-top: 4vh;
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+  font-weight: 700;
+  transition: ease-in-out .3s;
+}
+
+a:hover {
+  color: var(--darkGreen);
+  transition: ease-in-out .3s;
 }
 
 p {
@@ -528,8 +537,8 @@ p {
   position: absolute;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  height: fit-content;
-  min-height: 800px;
+  height: 100%;
+  min-height: 1000px;
   width: 100%;
   z-index: -1;
   background-color: var(--white);
@@ -540,8 +549,8 @@ p {
   position: absolute;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  height: fit-content;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 800px;
   width: 100%;
   z-index: -1;
   background-color: var(--white);
@@ -583,7 +592,7 @@ p {
 .whiteBackgroundLines div {
   border-right: 1px solid rgb(179, 178, 178, .15);
   height: fit-content;
-  min-height: 800px;
+  min-height: 1000px;
   width: 100%;
 }
 
@@ -1053,7 +1062,7 @@ p {
   margin-left: 2.5vw;
   display: flex;
   flex-direction: column;
-  height: 62vh;
+  height: 58vh;
   justify-content: space-between;
 }
 
@@ -1248,6 +1257,14 @@ p {
   font-family: 'Forum';
   font-size: 1.8rem;
 }
+
+.contactEmail {
+  margin-bottom: 4vh;
+  animation-name: slideUp;
+  animation-duration: .3s;
+  animation-delay: 600ms;
+}
+
 
 .contactEmail a {
   font-size: 1.2rem;
@@ -1557,7 +1574,20 @@ input {
   color: var(--black);
 }
 
+@media  screen and (max-width: 900px) {
+  .aboutBackgroundLines {
+    min-height: 1000px;
+    height: 100%;
+  }
+
+  .aboutBackgroundLines div {
+    min-height: 1000px;
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
   .photoHead {
     display: flex;
     flex-direction: column;
@@ -1570,6 +1600,26 @@ input {
 
   .about {
     padding: 0 0;
+  }
+
+  .aboutBackgroundLines {
+    min-height: 1000px;
+    height: 100%;
+  }
+
+  .aboutBackgroundLines div {
+    min-height: 1000px;
+    height: 100%;
+  }
+
+
+  .menuPhoto {
+    opacity: 0;
+    animation: none;
+  }
+
+  .menuPhoto img {
+    opacity: 0;
   }
 
   .about p {
@@ -1622,6 +1672,9 @@ input {
   .menuPhoto {
     opacity: 0;
   }
+
+
+
   .menuPage {
     grid-template-columns: 100%;
   }
@@ -1649,6 +1702,8 @@ input {
   }
 
 
+
+
 }
 
 
@@ -1662,9 +1717,16 @@ input {
     right: 10vw;
   }
 
-  .menuPhoto {
+  /* .menuPhoto {
     opacity: 0;
+    animation: none;
   }
+
+  .menuPhoto img {
+    opacity: 0;
+  } */
+
+
   .bigImage  {
     width: 100vw;
     height: 70vh;
@@ -1862,23 +1924,23 @@ input {
     margin: 0 0;
   }
 
-  .contactEmail {
-    margin-bottom: 4vh;
-  }
-  .contactEmail a {
-    font-size: .9rem;
-    margin-left: 5vw;
-  }
 
   .whiteBackgroundLines div {
     min-height: 1500px;
+    height: 100%;
   }
 
   .contactBackgroundLines div {
     min-height: 1000px;
   }
 
+  .aboutBackgroundLines {
+    height: 150vh;
+    min-height: 1250px;
+  }
+
   .aboutBackgroundLines div {
+    height: 150vh;
     min-height: 1250px;
   }
 

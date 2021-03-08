@@ -94,7 +94,7 @@ const Menu = (props) => {
                 loader={myLoader}
                 src={`${images[index]}.jpg`}
                 alt="photo"
-                width="625"
+                width="600"
                 height="500"
               />
             </div>
