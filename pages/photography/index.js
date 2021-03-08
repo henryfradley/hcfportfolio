@@ -31,7 +31,7 @@ const Photos = () => {
   return (
     <div class="photosPage">
       <Head>
-        <title>photography</title>
+        <title>Photography</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Menu black="true" name="PHOTOGRAPHY"/>

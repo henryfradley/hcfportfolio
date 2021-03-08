@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div class="mainPage">
       <Head>
-       <title>henry fradley</title>
+       <title>Henry Fradley</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Menu />

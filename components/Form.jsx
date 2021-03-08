@@ -41,21 +41,7 @@ const Form = (props) => {
     }));
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   axios({
-  //     method: 'POST',
-  //     url: '/send',
-  //     data: {
-  //       name: message.name,
-  //       email: message.email,
-  //       message: message.text,
-  //     }
-  //   })
 
-  //   setSubmit(true);
-
-  // };
 
   const handleSubmit = async (event) => {
     event.preventDefault();

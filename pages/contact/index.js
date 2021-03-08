@@ -4,6 +4,7 @@ import Form from '../../components/Form.jsx';
 import { useEffect, useState } from 'react';
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import Fade from 'react-reveal/Fade';
+import Head from 'next/head';
 
 const Contact = () => {
 
@@ -13,6 +14,10 @@ const Contact = () => {
 
   return (
     <div class="contactHolder">
+      <Head>
+       <title>Contact</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div class="contactBackgroundLines">
         <div></div>
         <div></div>

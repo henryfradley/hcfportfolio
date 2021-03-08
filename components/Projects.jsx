@@ -21,6 +21,7 @@ const Project = (props) => {
       <div class="project">
         <div class="highlightImage">
           <Fade distance="5vh" delay={500} bottom>
+
             <Image
             loader={myLoader}
             src={`${props.data.images[0]}.png`}
