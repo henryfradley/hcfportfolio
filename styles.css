@@ -1930,6 +1930,11 @@ input {
     height: 100%;
   }
 
+  .contactBackgroundLines {
+    min-height: 1000px;
+
+  }
+
   .contactBackgroundLines div {
     min-height: 1000px;
   }
