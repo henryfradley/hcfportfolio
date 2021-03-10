@@ -247,6 +247,16 @@ p {
   position: relative;
 }
 
+/* .image1 img {
+  transition: .3s ease-in-out;
+} */
+
+/* .image1 img:hover {
+  transform: scale(1.05);
+  transition: .3s ease-in-out;
+} */
+
+
 
 .image2 {
   opacity: .9;
@@ -1380,7 +1390,8 @@ input {
 
 
 .linkHolder {
-  height: 40%;
+  margin-top: .5rem;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1394,6 +1405,7 @@ input {
   transition: .5s ease-out;
   text-align: center;
   cursor: pointer;
+  margin: 0 0;
 
 }
 
@@ -1411,6 +1423,7 @@ input {
   transition: .5s ease-out;
   color: var(--black);
   text-align: center;
+  margin: 0 0;
 }
 
 .big {
