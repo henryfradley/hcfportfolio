@@ -2057,7 +2057,8 @@ input {
 
   .hcfLogo {
     width: fit-content;
-    height: 40px;
+    min-width: 9.5rem;
+    height: 2.2rem;
 
   }
 
