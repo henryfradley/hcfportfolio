@@ -2057,13 +2057,12 @@ input {
 
   .hcfLogo {
     width: fit-content;
-    min-width: 9.5rem;
-    height: 2.2rem;
-
+    height: 40px;
   }
 
   .hcfLogo p {
     font-size: 1.3rem;
+    white-space: nowrap;
   }
 
 
