@@ -2055,17 +2055,6 @@ input {
   }
 
 
-  .hcfLogo {
-    width: fit-content;
-    padding: .1rem .5rem;
-    height: 40px;
-  }
-
-  .hcfLogo p {
-    font-size: 1.3rem;
-    white-space: nowrap;
-  }
-
 
 }
 
