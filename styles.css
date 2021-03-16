@@ -2054,8 +2054,16 @@ input {
     font-size: 1.3rem;
   }
 
+  .hcfLogo {
+    width: fit-content;
+    white-space: nowrap;
+    height: 40px;
+
+  }
+
   .hcfLogo p {
     font-size: 1.3rem;
+    white-space: nowrap;
   }
 
 
