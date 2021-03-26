@@ -37,7 +37,7 @@ const Contact = () => {
           <Form />
           <div class="contactText">
           <Fade distance="5vh" delay={400} bottom>
-            <p>I'm currently looking for new opportunities in remote software engineering. Don't hesitate to reach out if you think I'd be a good fit (or just to say hi!)</p>
+            <p>I'm not currently looking for new opportunities but don't hesitate to reach out to just to say hi!</p>
           </Fade>
           <Fade distance="5vh" delay={600} bottom>
             <div class="contactEmail">

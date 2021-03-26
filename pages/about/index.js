@@ -59,7 +59,7 @@ const About = () => {
               <p>Thanks for checking out my website! I love software engineering because of how accessible and open-ended the possibilities are to build and create. I have a great eye for detail and style and enjoy focusing on the UX and appearance of my projects. My expertise is primarily in React, Next.js, and Node.js. </p>
             </Fade>
             <Fade distance="5vh" delay={900} bottom>
-              <p>I'm currently looking for remote opportunities in software engineering! If you would like to reach out or just say hi send me a message!</p>
+              <p>If you would like to reach out or just say hi send me a message!</p>
             </Fade>
             <div class="buttonCenter">
             <Fade distance="5vh" delay={1100} bottom>
