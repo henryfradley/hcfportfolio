@@ -22,7 +22,7 @@ const Home = () => {
         <div></div>
       </div>
       <Main />
-      <Projects />
+      {/* <Projects /> */}
       <Footer color="#20211F"/>
     </div>
   );

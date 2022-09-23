@@ -36,7 +36,7 @@ const Main = () => {
             </Fade>
             <div class="description">
               <Fade distance="5vh" delay={800} bottom>
-                <p>I am a Full Stack Software Engineer located in sunny Honolulu, HI. I am an artist at heart and love focusing on the UX and responsiveness of my projects. Take a look at some of my recent work below!</p>
+                <p>I am a Software Engineer currently working at at Patreon in sometimes sunny San Francisco.</p>
               </Fade>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Main = () => {
             </Fade>
           </div>
           <Fade distance="5vh" delay={800} bottom>
-            <p>React.js, Next.js, Javascript, SASS, MySQL, Postgres, HTML, CSS, AWS, Express, Node.js</p>
+            <p>Typescript, React, Javascript, CSS, HTML, Next, CSS, AWS, Express, Node.</p>
           </Fade>
         </div>
       </div>

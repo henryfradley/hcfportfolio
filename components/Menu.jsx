@@ -47,7 +47,7 @@ const Menu = (props) => {
   }
 
   const images = ['wilhelmina', 'bubbles', 'trolling', 'rock', 'clouds'];
-  const linkList = [['HOME', '../', 400], ['ABOUT', '/about', 600], ['PROJECTS', '/projects/micaela-designs', 800], ['PHOTOGRAPHY', '/photography', 1000], ['CONTACT', '/contact', 1200]];
+  const linkList = [['HOME', '../', 400], ['PHOTOGRAPHY', '/photography', 1000], ['CONTACT', '/contact', 1200]];
 
   const links = linkList.map(link => {
     return <div class="top" onMouseDown={() => {
