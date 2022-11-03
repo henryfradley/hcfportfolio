@@ -1252,13 +1252,15 @@ p {
 
 .contact {
   display: grid;
-  grid-template-columns: 50% 50%;
   padding: 0 0;
 
 }
 
 .contactText {
   padding-right: 15vw;
+  margin: 0 auto;
+  max-width: 90%;
+  width: 600px;
 }
 
 .contactText p {

@@ -1,10 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/": "pages/index.html",
-  "/photography": "pages/photography.html",
-  "/contact": "pages/contact.html",
-  "/projects/[id]": "pages/projects/[id].html",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/contact": "pages/contact.js"
 }
