@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/henryfradley/hcfportfolio#readme",
   "dependencies": {
-    "@sendgrid/mail": "^7.4.2",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
